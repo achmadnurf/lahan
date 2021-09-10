@@ -32,7 +32,7 @@
                                     <tbody>
                                     <tr>
                                         <th>No</th>
-                                        <th>Tanggal Pinjam</th>
+                                        {{-- <th>Tanggal Pinjam</th> --}}
                                         <th>Nama Anggota</th>
                                         <th>Jangka Waktu</th>
                                         {{-- <th>Jumlah Angsuran</th> --}}
@@ -48,7 +48,7 @@
                                         @foreach($list_kredit as $index => $kredit)
                                            <tr>
                                                <td>{{$index+1}}</td>
-                                               <td>{{$kredit->tanggal_pinjam}}</td>
+                                               {{-- <td>{{$kredit->tanggal_pinjam}}</td> --}}
                                                <td>{{$kredit->anggota->sertifikat}}</td>
                                                <td>{{$kredit->jangka_waktu}} </td>
                                                <td>{{$kredit->jumlah}}</td>

@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Data Kredit</h4>
+                    <h4>Data Posisi</h4>
                     <div class="ml-auto card-header-form">
                         <form>
                             <div class="input-group">
@@ -17,9 +17,9 @@
                     </div>
                     <div class="ml-auto card-header-action">
                         <a href="{{route('kredit.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah
-                            Kredit</a>
+                            Posisi</a>
                         <a href="{{route('laporan.kredit')}}" class="btn btn-primary"><i class="fa fa-file-export"></i> Laporan
-                            Data Kredit</a>
+                            Data Posisi</a>
                     </div>
                 </div>
                 <div class="card-body p-0">
@@ -28,10 +28,10 @@
                             <tbody>
                             <tr>
                                 <th>No</th>
-                                <th>Tanggal Pinjam</th>
-                                <th>Nama Anggota</th>
-                                <th>Jangka Waktu</th>
-                                <th>Jumlah Pinjaman</th>
+                                {{-- <th>Tanggal Pinjam</th> --}}
+                                <th>No Sertif/Ajb</th>
+                                <th>Lintang Selatan</th>
+                                <th>Bujur Timur</th>
                                 <th>MDPL</th>
                                 <th>Aksi</th>
                             </tr>

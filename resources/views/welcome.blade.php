@@ -3,7 +3,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h4 class="card-title">KOPERASI </h4>
+            <h4 class="card-title">Managemen Lahan </h4>
             <div class="ml-auto card-header-action">
                 <a href="{{route('login')}}" class="btn btn-outline-primary">Login</a>
             </div>

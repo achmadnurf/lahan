@@ -17,7 +17,7 @@ class Index extends Component
     public function kreditDeleted(){
         $this->dispatchBrowserEvent('show-message',[
             'type' => 'success',
-            'message' => 'Data kredit berhasil di hapus',
+            'message' => 'Data Posisi berhasil di hapus',
         ]);
     }
     public function render()

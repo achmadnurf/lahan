@@ -3,20 +3,20 @@
         <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-header">
-                    <h4>Tambah Kredit</h4>
+                    <h4>Tambah Posisi</h4>
                 </div>
                 <div class="card-body">
-                    <div class="form-group row">
+                    {{-- <div class="form-group row">
                         <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Pinjam*</label>
                         <div class="col-sm-9">
                             <input wire:model.lazy="tanggal_pinjam" type="date" class="form-control " id="tanggal_pinjam">
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="form-group row" wire:ignore>
-                        <label for="anggota_id" class="col-sm-3 col-form-label">Nama Anggota*</label>
+                        <label for="anggota_id" class="col-sm-3 col-form-label">No Sertif/Ajb</label>
                         <div class="col-sm-9">
                             <select id="anggota_id" name="anggota_id" class="form-control select2">
-                                <option selected>--- Pilih Nama Angota ---</option>
+                                <option selected>--- Pilih Sertif/Ajb ---</option>
                                 @foreach($list_anggota as $anggota)
                                     <option value="{{$anggota->id}}">{{$anggota->sertifikat}}</option>
                                 @endforeach
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="jangka_waktu" class="col-sm-3 col-form-label">Jangka Waktu*</label>
+                        <label for="jangka_waktu" class="col-sm-3 col-form-label">Lintang Selatan</label>
                         <div class="col-sm-9">
                             <input wire:model.lazy="jangka_waktu" placeholder="0" type="text" class="form-control "
                                    id="jangka_waktu"
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="jumlah" class="col-sm-3 col-form-label">Jumlah Pinjaman*</label>
+                        <label for="jumlah" class="col-sm-3 col-form-label">Bujur Timur</label>
                         <div class="col-sm-9">
                             <input wire:model.lazy="jumlah" class="form-control" id="jumlah"
                                       type="text" placeholder="0"/>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div wire:click="simpan" class="card-footer text-right">
-                    <button class="btn btn-primary">Simpan Data Kredit</button>
+                    <button class="btn btn-primary">Simpan Data Posisi</button>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 @section('content')
     <div class="section">
         <div class="section-header">
-            <h1>Data Kredit</h1>
+            <h1>Data Posisi</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{route('home')}}">Dashboard</a></div>
                 <div class="breadcrumb-item">Kredit</div>
@@ -13,7 +13,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Detail Data Kredit</h4>
+                            <h4>Detail Data Posisi</h4>
                         </div>
                         <div class="card-body">
                             <div class="form-group row">

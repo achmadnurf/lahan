@@ -3,7 +3,7 @@
     <td>{{$anggota->sertifikat}}</td>
     <td>{{$anggota->kwitansi}}</td>
     <td>{{$anggota->lokasi}}</td>
-    <td>{{$anggota->luas}}</td>
+    <td>{{$anggota->luas}} m<sup>2 </td>
     <td>{{$anggota->status}}</td>
     <td>
         <button class="btn btn-sm btn-danger" wire:click="hapus">Hapus</button>

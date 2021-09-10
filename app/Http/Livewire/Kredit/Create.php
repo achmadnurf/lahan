@@ -9,14 +9,14 @@ use Livewire\Component;
 class Create extends Component
 {
     public $anggota_id;
-    public $tanggal_pinjam;
+    // public $tanggal_pinjam;
     public $jangka_waktu;
     public $jumlah;
     public $mdpl;
 
     protected $rules = [
         'anggota_id' => 'required',
-        'tanggal_pinjam' => 'required|date',
+        // 'tanggal_pinjam' => 'required|date',
         'jangka_waktu' => 'required|string',
         'jumlah' => 'required|string',
         'mdpl' => 'required|string'
