@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Data Anggota</h4>
+                    <h4>Data Lahan</h4>
                     <div class="card-header-form">
                         <form>
                             <div class="input-group">

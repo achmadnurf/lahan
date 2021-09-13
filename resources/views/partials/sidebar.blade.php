@@ -1,14 +1,14 @@
 <aside id="sidebar-wrapper">
-    <div class="sidebar-brand">
+    <!-- <div class="sidebar-brand">
         <a href="">{{ config('app.name') }}</a>
-    </div>
-    <div class="sidebar-brand sidebar-brand-sm">
+    </div> -->
+    <!-- <div class="sidebar-brand sidebar-brand-sm">
         <a href="#">{{ strtoupper(substr(config('app.name'), 0, 2)) }}</a>
-    </div>
+    </div> -->
     <ul class="sidebar-menu">
-        <li class="text-center">
+        <!-- <li class="text-center">
             <img class="img-fluid" src="{{asset('sma.jpg')}}" alt="" height="150">
-        </li>
+        </li> -->
         <hr>
         <li class="menu-header">Dashboard</li>
         <li class="{{ request()->is('home') ? 'active' : '' }}"><a class="nav-link" href="{{ route('home') }}"><i
@@ -38,7 +38,7 @@
                 <span>Data Lahan</span></a></li>
         <li class="{{ request()->is('kredit*') ? 'active' : '' }}"><a class="nav-link" href="{{route('kredit.index')}}"><i
                         class="fas fa-credit-card"></i> <span>Data
-          Posisi</span></a></li>
+          Kredit</span></a></li>
         @endrole
     </ul>
 </aside>
