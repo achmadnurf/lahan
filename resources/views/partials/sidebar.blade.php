@@ -37,8 +37,7 @@
     fa-users"></i>
                 <span>Data Lahan</span></a></li>
         <li class="{{ request()->is('kredit*') ? 'active' : '' }}"><a class="nav-link" href="{{route('kredit.index')}}"><i
-                        class="fas fa-credit-card"></i> <span>Data
-          Kredit</span></a></li>
+                        class="fas fa-credit-card"></i> <span>Data Posisi Lahan</span></a></li>
         @endrole
     </ul>
 </aside>
