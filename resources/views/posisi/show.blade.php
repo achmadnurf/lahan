@@ -17,7 +17,7 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group row">
-                                <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Pinjam</label>
+                                <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Entry Lahan</label>
                                 <div class="col-sm-9">
                                     <input type="date" disabled value="{{$posisi->tanggal_pinjam}}"
                                            class="form-control "
@@ -25,7 +25,7 @@
                                 </div>
                             </div>
                             <div class="form-group row" wire:ignore>
-                                <label for="lahan_id" class="col-sm-3 col-form-label">Nama Lsahan</label>
+                                <label for="lahan_id" class="col-sm-3 col-form-label">Lahan</label>
                                 <div class="col-sm-9">
                                     <input id="lahan_id" disabled class="form-control" value="{{$posisi->lahan->sertifikat}}"
                                            type="text"/>
@@ -39,13 +39,13 @@
                                            id="garis_lintang" disabled>
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            {{-- <div class="form-group row">
                                 <label for="garis_litang" class="col-sm-3 col-form-label"> Pinjaman</label>
                                 <div class="col-sm-9">
                                     <input value="{{$posisi->garis_litang}}" class="form-control" id="garis_litang"
                                            type="text" placeholder="0"/>
                                 </div>
-                            </div>
+                            </div> --}}
                             
                             <div class="form-group row">
                                 <label for="garis_bujur" class="col-sm-3 col-form-label">Diatas Permukaan</label>
@@ -67,7 +67,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Status Pinjaman</h4>
+                            <h4>Status Lahan</h4>
                         </div>
                         <div class="card-body">
                             <div class="form-group row">
