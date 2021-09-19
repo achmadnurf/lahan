@@ -3,7 +3,7 @@
         <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-header">
-                    <h4>Tambah Anggota</h4>
+                    <h4>Tambah Lahan</h4>
                 </div>
                 <div class="card-body">
                     <div class="form-group row">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div wire:click="simpan" class="card-footer text-right">
-                    <button class="btn btn-primary">Simpan Data Anggota</button>
+                    <button class="btn btn-primary">Simpan Data Lahan</button>
                 </div>
             </div>
         </div>

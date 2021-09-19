@@ -25,10 +25,10 @@
                                 </div>
                             </div>
                             <div class="form-group row" wire:ignore>
-                                <label for="anggota_id" class="col-sm-3 col-form-label">Nama Anggota</label>
+                                <label for="lahan_id" class="col-sm-3 col-form-label">Nama Lahan</label>
                                 <div class="col-sm-9">
-                                    <input id="anggota_id" disabled class="form-control"
-                                           value="{{$kredit->anggota->sertifikat}}"
+                                    <input id="lahan_id" disabled class="form-control"
+                                           value="{{$kredit->lahan->sertifikat}}"
                                            type="text"/>
                                 </div>
                             </div>

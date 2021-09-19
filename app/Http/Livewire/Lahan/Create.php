@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Livewire\Anggota;
+namespace App\Http\Livewire\Lahan;
 
-use App\Models\Anggota;
+use App\Models\Lahan;
 use Livewire\Component;
 
 class Create extends Component
@@ -53,7 +53,7 @@ class Create extends Component
     public function simpan(){
         $data = $this->validate();
         try{
-            Anggota::create($data);
+            Lahan::create($data);
             $this->dispatchBrowserEvent('show-message', [
                 'type' => 'success',
                 'message' => "Data lahan berhasil dibuat"
@@ -65,6 +65,6 @@ class Create extends Component
     }
     public function render()
     {
-        return view('livewire.anggota.create');
+        return view('livewire.lahan.create');
     }
 }

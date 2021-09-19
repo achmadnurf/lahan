@@ -32,7 +32,7 @@
     }}"><i
                         class="fas fa-sticky-note"></i> <span>Jurnal</span></a></li>
         @elserole('simpan-pinjam')
-        <li class="{{ request()->is('anggota*') ? 'active' : '' }}"><a class="nav-link" href="{{route('anggota.index')
+        <li class="{{ request()->is('lahan*') ? 'active' : '' }}"><a class="nav-link" href="{{route('lahan.index')
     }}"><i class="fas
     fa-users"></i>
                 <span>Data Lahan</span></a></li>

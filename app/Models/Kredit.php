@@ -16,15 +16,15 @@ class Kredit extends Model
         'jangka_waktu',
         'jumlah',
         'mdpl',
-        'anggota_id',
+        'lahan_id',
         'validasi',
         'authorisasi'
     ];
 
-    protected $with = ['anggota'];
+    protected $with = ['lahan'];
 
-    public function anggota(): BelongsTo
+    public function lahan(): BelongsTo
     {
-        return $this->belongsTo(Anggota::class);
+        return $this->belongsTo(Lahan::class);
     }
 }

@@ -6,19 +6,13 @@
                     <h4>Tambah Posisi</h4>
                 </div>
                 <div class="card-body">
-                    {{-- <div class="form-group row">
-                        <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Pinjam*</label>
-                        <div class="col-sm-9">
-                            <input wire:model.lazy="tanggal_pinjam" type="date" class="form-control " id="tanggal_pinjam">
-                        </div>
-                    </div> --}}
                     <div class="form-group row" wire:ignore>
-                        <label for="anggota_id" class="col-sm-3 col-form-label">No Sertif/Ajb</label>
+                        <label for="lahan_id" class="col-sm-3 col-form-label">No Sertif/Ajb</label>
                         <div class="col-sm-9">
-                            <select id="anggota_id" name="anggota_id" class="form-control select2">
+                            <select id="lahan_id" name="lahan_id" class="form-control select2">
                                 <option selected>--- Pilih Sertif/Ajb ---</option>
-                                @foreach($list_anggota as $anggota)
-                                    <option value="{{$anggota->id}}">{{$anggota->sertifikat}}</option>
+                                @foreach($list_lahan as $lahan)
+                                    <option value="{{$lahan->id}}">{{$lahan->sertifikat}}</option>
                                 @endforeach
                             </select>
                         </div>

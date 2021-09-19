@@ -1,7 +1,7 @@
 <tr>
     <td>{{$index}}</td>
     {{-- <td>{{$kredit->tanggal_pinjam}}</td> --}}
-    <td>{{$kredit->anggota->sertifikat}}</td>
+    <td>{{$kredit->lahan->sertifikat}}</td>
     <td>{{$kredit->jangka_waktu}} <sup>° </td>
     <td>{{$kredit->jumlah}} <sup>° </td>
     {{-- <td>{{$kredit->status}}</td> --}}

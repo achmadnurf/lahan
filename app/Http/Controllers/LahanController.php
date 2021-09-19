@@ -2,16 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UpdateAnggotaRequest;
-use App\Models\Anggota;
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
-class AnggotaController extends Controller
+class LahanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,7 +13,7 @@ class AnggotaController extends Controller
      */
     public function index()
     {
-        return view('anggota.index');
+        return view('lahan.index');
     }
 
     /**
@@ -30,7 +23,7 @@ class AnggotaController extends Controller
      */
     public function create()
     {
-        return view('anggota.create');
+        return view('lahan.create');
     }
 
     /**
@@ -47,10 +40,10 @@ class AnggotaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param Anggota $anggota
+     * @param Lahan $lahan
      * @return Response
      */
-    public function show(Anggota $anggota)
+    public function show(Lahan $lahan)
     {
         //
     }
@@ -58,36 +51,36 @@ class AnggotaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Anggota $anggota
+     * @param Lahan $lahan
      * @return View
      */
-    public function edit(Anggota $anggota): View
+    public function edit(Lahan $lahan): View
     {
-        return view('anggota.edit', compact('anggota'));
+        return view('lahan.edit', compact('lahan'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param UpdateAnggotaRequest $request
-     * @param Anggota $anggota
+     * @param UpdateLahanRequest $request
+     * @param Lahan $lahan
      * @return RedirectResponse
      */
-    public function update(UpdateAnggotaRequest $request, Anggota $anggota)
+    public function update(UpdateLahanRequest $request, Lahan $lahan)
     {
         $data = $request->validated();
-        $anggota->update($data);
+        $lahan->update($data);
 
-        return redirect()->route('anggota.index');
+        return redirect()->route('lahan.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param Anggota $anggota
+     * @param Lahan $lahan
      * @return Response
      */
-    public function destroy(Anggota $anggota)
+    public function destroy(Lahan $lahan)
     {
         //
     }

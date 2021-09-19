@@ -37,7 +37,7 @@
                             </tr>
                             @if($list_kredit->isEmpty())
                                 <tr>
-                                    <td colspan="6" class="text-center">Data anggota belum tersedia</td>
+                                    <td colspan="6" class="text-center">Data lahan belum tersedia</td>
                                 </tr>
                             @else
                                 @foreach($list_kredit as $index => $kredit)

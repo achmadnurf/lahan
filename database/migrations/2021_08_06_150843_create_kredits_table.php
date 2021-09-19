@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Anggota;
+use App\Models\Lahan;
 use Carbon\Carbon;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -20,7 +20,7 @@ class CreateKreditsTable extends Migration
             $table->date('tanggal_pinjam')->default(Carbon::now());
             $table->string('jangka_waktu')->default(0);
             $table->string('jumlah')->default(0);
-            $table->foreignIdFor(Anggota::class)->nullable()->constrained()->nullOnDelete();
+            $table->foreignIdFor(Lahan::class)->nullable()->constrained()->nullOnDelete();
             $table->string('mdpl')->default(0);
             $table->boolean('validasi')->default(false);
             $table->boolean('authorisasi')->default(false);

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\AnggotaController;
+use App\Http\Controllers\LahanController;
 use App\Http\Controllers\BendaharaController;
 use App\Http\Controllers\KreditController;
 use App\Http\Controllers\LaporanKontroller;
@@ -30,10 +30,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class,
 Route::middleware(['auth'])->group(function () {
     Route::resources([
         'kredit' => KreditController::class,
-        'anggota' => AnggotaController::class,
+        'lahan' => LahanController::class,
     ], [
         'parameters' => [
-            'anggota' => 'anggota'
+            'lahan' => 'lahan'
         ]
     ]);
     Route::get('kredit-validasi', [BendaharaController::class, 'index'])->name('validasi.index');

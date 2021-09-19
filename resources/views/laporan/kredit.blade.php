@@ -45,7 +45,7 @@
                                             <td width="80%">
                                                 <div align="center">
                                                     <span style="font-size: x-large; ">Koperasi SMAN 4 Cirebon</span><br>
-                                                    <span style="font-size: x-large; ">Laporan Data Kredit Anggota</span><br>
+                                                    <span style="font-size: x-large; ">Laporan Data Kredit lahan</span><br>
                                                     <br>
                                                     <hr >
                                                 </div>
@@ -63,7 +63,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Tanggal Pinjaman</th>
-                                            <th>Nama Anggota</th>
+                                            <th>Nama Lahan</th>
                                             <th>Jangka Waktu</th>
                                             <th>Jumlah Anggaran</th>
                                             <th>Jumlah Pinjaman</th>
@@ -74,7 +74,7 @@
                                             <tr>
                                                 <td>{{$index+1}}</td>
                                                 <td>{{$kredit->tanggal_pinjam}}</td>
-                                                <td>{{$kredit->anggota->sertifikat}}</td>
+                                                <td>{{$kredit->lahan->sertifikat}}</td>
                                                 <td>{{$kredit->jangka_waktu}}</td>
                                                 {{-- <td class="nominal">($kredit->jumlah_ansuran)</td> --}}
                                                 <td>{{$kredit->jumlah}}</td>

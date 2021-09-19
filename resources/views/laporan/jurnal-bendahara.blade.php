@@ -84,7 +84,7 @@
                                                @foreach($list_kredit as $kredit)
                                                    <tr>
                                                        <td rowspan="2" class="tgl"> {{$kredit->tanggal_pinjam}}</td>
-                                                       <td> Piutang- {{$kredit->anggota->sertifikat}}</td>
+                                                       <td> Piutang- {{$kredit->lahan->sertifikat}}</td>
                                                        <td>{{$kredit->jumlah}}</td>
                                                        <td></td>
                                                    </tr>

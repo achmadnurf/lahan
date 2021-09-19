@@ -2,20 +2,20 @@
 
 namespace App\Http\Livewire\Kredit;
 
-use App\Models\Anggota;
+use App\Models\Lahan;
 use App\Models\Kredit;
 use Livewire\Component;
 
 class Create extends Component
 {
-    public $anggota_id;
+    public $lahan_id;
     // public $tanggal_pinjam;
     public $jangka_waktu;
     public $jumlah;
     public $mdpl;
 
     protected $rules = [
-        'anggota_id' => 'required',
+        'lahan_id' => 'required',
         // 'tanggal_pinjam' => 'required|date',
         'jangka_waktu' => 'required|string',
         'jumlah' => 'required|string',
@@ -33,18 +33,18 @@ class Create extends Component
             Kredit::create($data);
             $this->dispatchBrowserEvent('show-message', [
                 'type' => 'success',
-                'message' => 'Berhasil menambahkan kredit',
+                'message' => 'Berhasil menambahkan posisi',
             ]);
         }catch (\Exception $err){
             $this->dispatchBrowserEvent('show-message', [
                 'type' => 'error',
-                'message' => 'Gagal menambahkan kredit',
+                'message' => 'Gagal menambahkan posisi',
             ]);
         }
     }
     public function render()
     {
-        $list_anggota = Anggota::all();
-        return view('livewire.kredit.create', compact('list_anggota'));
+        $list_lahan = Lahan::all();
+        return view('livewire.kredit.create', compact('list_lahan'));
     }
 }

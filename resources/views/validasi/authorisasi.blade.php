@@ -33,7 +33,7 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Tanggal Pinjam</th>
-                                        <th>Nama Anggota</th>
+                                        <th>Nama Lahan</th>
                                         <th>Jangka Waktu</th>
                                         {{-- <th>Jumlah Angsuran</th> --}}
                                         <th>Jumlah Pinjaman</th>
@@ -50,7 +50,7 @@
                                             <tr>
                                                 <td>{{$index+1}}</td>
                                                 <td>{{$kredit->tanggal_pinjam}}</td>
-                                                <td>{{$kredit->anggota->sertifikat}}</td>
+                                                <td>{{$kredit->lahan->sertifikat}}</td>
                                                 <td>{{$kredit->jangka_waktu}} </td>
                                                 <td>{{$kredit->jumlah}}</td>
                                                 <td>{{$kredit->mdpl}}</td>

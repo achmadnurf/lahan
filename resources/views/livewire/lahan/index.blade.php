@@ -16,8 +16,8 @@
                         </form>
                     </div>
                     <div class="ml-auto card-header-action">
-                        <a href="{{route('anggota.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah
-                            Anggota</a>
+                        <a href="{{route('lahan.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah
+                            Lahan</a>
                     </div>
                 </div>
                 <div class="card-body p-0">
@@ -33,14 +33,14 @@
                                 <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
-                            @if($list_anggota->isEmpty())
+                            @if($list_lahan->isEmpty())
                                 <tr>
-                                    <td colspan="6" class="text-center">Data anggota belum tersedia</td>
+                                    <td colspan="6" class="text-center">Data lahan belum tersedia</td>
                                 </tr>
                                 @else
-                                @foreach($list_anggota as $index => $anggota)
-                                    <livewire:anggota.single :anggota="$anggota" :index="$index+1" :key="time()
-                                    .$anggota->id"/>
+                                @foreach($list_lahan as $index => $lahan)
+                                    <livewire:lahan.single :lahan="$lahan" :index="$index+1" :key="time()
+                                    .$lahan->id"/>
                                 @endforeach
                             @endif
                             </tbody>
