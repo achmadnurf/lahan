@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kredit;
+use App\Models\Posisi;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class KreditController extends Controller
+class PosisiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +18,7 @@ class KreditController extends Controller
      */
     public function index()
     {
-        return view('kredit.index');
+        return view('posisi.index');
     }
 
     /**
@@ -28,28 +28,28 @@ class KreditController extends Controller
      */
     public function create(): View
     {
-        return view('kredit.create');
+        return view('posisi.create');
     }
 
 
     /**
      * Display the specified resource.
      *
-     * @param Kredit $kredit
+     * @param Posisi $Posisi
      * @return View
      */
-    public function show(Kredit $kredit): View
+    public function show(Posisi $posisi): View
     {
-        return view('kredit.show', compact('kredit'));
+        return view('posisi.show', compact('posisi'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Kredit $kredit
+     * @param Posisi $posisi
      * @return Response
      */
-    public function edit(Kredit $kredit)
+    public function edit(Posisi $posisi)
     {
 
     }
@@ -58,10 +58,10 @@ class KreditController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param Kredit $kredit
+     * @param Posisi $posisi
      * @return Response
      */
-    public function update(Request $request, Kredit $kredit)
+    public function update(Request $request, Posisi $posisi)
     {
         //
     }
@@ -69,10 +69,10 @@ class KreditController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param Kredit $kredit
+     * @param Posisi $posisi
      * @return Response
      */
-    public function destroy(Kredit $kredit)
+    public function destroy(Posisi $posisi)
     {
         //
     }

@@ -6,6 +6,12 @@
                     <h4>Tambah Posisi</h4>
                 </div>
                 <div class="card-body">
+                    {{-- <div class="form-group row">
+                        <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Pinjam*</label>
+                        <div class="col-sm-9">
+                            <input wire:model.lazy="tanggal_pinjam" type="date" class="form-control " id="tanggal_pinjam">
+                        </div>
+                    </div> --}}
                     <div class="form-group row" wire:ignore>
                         <label for="lahan_id" class="col-sm-3 col-form-label">No Sertif/Ajb</label>
                         <div class="col-sm-9">
@@ -18,17 +24,17 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="jangka_waktu" class="col-sm-3 col-form-label">Lintang Selatan</label>
+                        <label for="garis_lintang" class="col-sm-3 col-form-label">Lintang Selatan</label>
                         <div class="col-sm-9">
-                            <input wire:model.lazy="jangka_waktu" placeholder="0" type="text" class="form-control "
-                                   id="jangka_waktu"
+                            <input wire:model.lazy="garis_lintang" placeholder="0" type="text" class="form-control "
+                                   id="garis_lintang"
                                 >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="jumlah" class="col-sm-3 col-form-label">Bujur Timur</label>
+                        <label for="garis_bujur" class="col-sm-3 col-form-label">Bujur Timur</label>
                         <div class="col-sm-9">
-                            <input wire:model.lazy="jumlah" class="form-control" id="jumlah"
+                            <input wire:model.lazy="garis_bujur" class="form-control" id="garis_bujur"
                                       type="text" placeholder="0"/>
                         </div>
                     </div>

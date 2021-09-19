@@ -2,52 +2,52 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kredit;
+use App\Models\Posisi;
 use Illuminate\Http\Request;
 
 class BendaharaController extends Controller
 {
     public function index(){
-        $list_kredit = Kredit::query();
-        $list_kredit = $list_kredit->paginate(10);
-        return view('validasi.index', compact('list_kredit'));
+        $list_posisi = posisi::query();
+        $list_posisi = $list_posisi->paginate(10);
+        return view('validasi.index', compact('list_posisi'));
     }
 
-    public function validasi(Request $request, Kredit $kredit){
-        return view('validasi.validate', compact('kredit'));
+    public function validasi(Request $request, Posisi $posisi){
+        return view('validasi.validate', compact('posisi'));
     }
 
-    public function store(Request $request, Kredit $kredit){
+    public function store(Request $request, Posisi $posisi){
         $data =  $request->validate([
             'validasi' => 'required'
         ]);
-        $kredit->update($data);
+        $posisi->update($data);
         return redirect()->route('validasi.index');
     }
 
     public function authorisasiIndex(){
-        $list_kredit = Kredit::query();
-        $list_kredit->where('validasi', true);
-        $list_kredit = $list_kredit->paginate(10);
-        return view('validasi.authorisasi', compact('list_kredit'));
+        $list_posisi = Posisi::query();
+        $list_posisi->where('validasi', true);
+        $list_posisi = $list_posisi->paginate(10);
+        return view('validasi.authorisasi', compact('list_posisi'));
     }
 
     public function slipPencairanIndex(){
-        $list_kredit = Kredit::query();
-        $list_kredit->where('authorisasi', true);
-        $list_kredit = $list_kredit->paginate(10);
-        return view('validasi.slip', compact('list_kredit'));
+        $list_posisi = Posisi::query();
+        $list_posisi->where('authorisasi', true);
+        $list_posisi = $list_posisi->paginate(10);
+        return view('validasi.slip', compact('list_posisi'));
     }
-    public function authorizeKredit(Request $request, Kredit $kredit){
-        $kredit->authorisasi = true;
-        $kredit->save();
+    public function authorizePosisi(Request $request, Posisi $posisi){
+        $posisi->authorisasi = true;
+        $posisi->save();
 
         return redirect()->back();
     }
 
 
-    public function cetakSlip(Request $request, Kredit $kredit){
-        return view('laporan.slip', compact('kredit'));
+    public function cetakSlip(Request $request, Posisi $posisi){
+        return view('laporan.slip', compact('posisi'));
     }
 
 }

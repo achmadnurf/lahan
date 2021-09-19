@@ -8,6 +8,6 @@
                 <div class="breadcrumb-item">Posisi</div>
             </div>
         </div>
-        @livewire('kredit.index')
+        @livewire('posisi.index')
     </div>
 @endsection

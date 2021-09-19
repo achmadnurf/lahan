@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKreditsTable extends Migration
+class CreatePosisisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,12 +15,12 @@ class CreateKreditsTable extends Migration
      */
     public function up()
     {
-        Schema::create('kredits', function (Blueprint $table) {
+        Schema::create('posisis', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal_pinjam')->default(Carbon::now());
-            $table->string('jangka_waktu')->default(0);
-            $table->string('jumlah')->default(0);
-            $table->foreignIdFor(Lahan::class)->nullable()->constrained()->nullOnDelete();
+            $table->string('garis_lintang')->default(0);
+            $table->string('garis_bujur')->default(0);
+            $table->foreignIdFor(Lahan::class)->nullable()->nullOnDelete();
             $table->string('mdpl')->default(0);
             $table->boolean('validasi')->default(false);
             $table->boolean('authorisasi')->default(false);
@@ -36,6 +36,6 @@ class CreateKreditsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kredits');
+        Schema::dropIfExists('posisis');
     }
 }

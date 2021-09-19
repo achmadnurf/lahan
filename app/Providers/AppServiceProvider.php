@@ -29,8 +29,8 @@ class AppServiceProvider extends ServiceProvider
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }
-        Blade::directive('rp', function ($jumlah){
-            return "Rp. <?php echo number_format($jumlah,0,',','.'); ?>";
+        Blade::directive('rp', function ($garis_bujur){
+            return "Rp. <?php echo number_format($garis_bujur,0,',','.'); ?>";
         });
 
         Blade::if('role', function ($value){

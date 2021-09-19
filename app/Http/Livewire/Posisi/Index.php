@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Livewire\Kredit;
+namespace App\Http\Livewire\Posisi;
 
-use App\Models\Kredit;
+use App\Models\Posisi;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -11,10 +11,10 @@ class Index extends Component
     use WithPagination;
 
     protected $listeners = [
-        'kreditDeleted',
+        'posisiDeleted',
     ];
 
-    public function kreditDeleted(){
+    public function posisiDeleted(){
         $this->dispatchBrowserEvent('show-message',[
             'type' => 'success',
             'message' => 'Data Posisi berhasil di hapus',
@@ -22,8 +22,8 @@ class Index extends Component
     }
     public function render()
     {
-        $list_kredit = Kredit::query();
-        $list_kredit = $list_kredit->paginate(10);
-        return view('livewire.kredit.index', compact('list_kredit'));
+        $list_posisi = Posisi::query();
+        $list_posisi = $list_posisi->paginate(10);
+        return view('livewire.posisi.index', compact('list_posisi'));
     }
 }

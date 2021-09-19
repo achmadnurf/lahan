@@ -42,7 +42,7 @@
                                             <td><img src="{{asset('sma.jpg')}}" width="120"></td>
                                             <td id="">
                                                 <div align="center">
-                                                    <span style="font-size: large; ">SLIP PENCAIRAN KREDIT lahan</span><br>
+                                                    <span style="font-size: large; ">SLIP PENCAIRAN POSISI LAHAN</span><br>
                                                     <span style="font-size: large; ">NO : SPP/X.VI/2020/12</span><br>
 
                                                 </div>
@@ -58,11 +58,11 @@
                                     <table>
                                         <tr class="text2">
                                             <td>Nama</td>
-                                            <td width="572">: {{$kredit->lahan->sertifikat}}</td>
+                                            <td width="572">: {{$posisi->lahan->sertifikat}}</td>
                                         </tr>
                                         <tr>
                                             <td>Jumlah</td>
-                                            <td width="564">: {{$kredit->jumlah}}</td>
+                                            <td width="564">: {{$posisi->garis_bujur}}</td>
                                         </tr>
                                     </table>
                                     <br><br><br><br><br><br>
@@ -77,7 +77,7 @@
 
                                     <table width="625">
                                         <tr>
-                                            <td width="50%" class="text" align="center">{{$kredit->lahan->sertifikat}}</td>
+                                            <td width="50%" class="text" align="center">{{$posisi->lahan->sertifikat}}</td>
                                             <td width="50%" class="text" align="center">Ketua</td>
                                         </tr>
 

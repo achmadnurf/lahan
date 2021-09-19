@@ -2,7 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateLahanRequest;
+use App\Models\Lahan;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class LahanController extends Controller
 {
@@ -40,8 +47,8 @@ class LahanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param Lahan $lahan
-     * @return Response
+     * @param Lahan $Lahan
+ lahanreturn Response
      */
     public function show(Lahan $lahan)
     {
@@ -51,8 +58,8 @@ class LahanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Lahan $lahan
-     * @return View
+     * @param Lahan $Lahan
+ lahanreturn View
      */
     public function edit(Lahan $lahan): View
     {
@@ -63,8 +70,8 @@ class LahanController extends Controller
      * Update the specified resource in storage.
      *
      * @param UpdateLahanRequest $request
-     * @param Lahan $lahan
-     * @return RedirectResponse
+     * @param Lahan $Lahan
+ lahanreturn RedirectResponse
      */
     public function update(UpdateLahanRequest $request, Lahan $lahan)
     {

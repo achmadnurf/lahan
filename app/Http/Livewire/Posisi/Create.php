@@ -1,50 +1,50 @@
 <?php
 
-namespace App\Http\Livewire\Kredit;
+namespace App\Http\Livewire\Posisi;
 
 use App\Models\Lahan;
-use App\Models\Kredit;
+use App\Models\Posisi;
 use Livewire\Component;
 
 class Create extends Component
 {
     public $lahan_id;
     // public $tanggal_pinjam;
-    public $jangka_waktu;
-    public $jumlah;
+    public $garis_lintang;
+    public $garis_bujur;
     public $mdpl;
 
     protected $rules = [
         'lahan_id' => 'required',
         // 'tanggal_pinjam' => 'required|date',
-        'jangka_waktu' => 'required|string',
-        'jumlah' => 'required|string',
+        'garis_lintang' => 'required|string',
+        'garis_bujur' => 'required|string',
         'mdpl' => 'required|string'
         
     ];
 
     public function simpan(){
         $data = $this->validate();
-        $data["jumlah"];
-        $data["jangka_waktu"];
+        $data["garis_bujur"];
+        $data["garis_lintang"];
         $data["mdpl"];
 
         try {
-            Kredit::create($data);
+            Posisi::create($data);
             $this->dispatchBrowserEvent('show-message', [
                 'type' => 'success',
-                'message' => 'Berhasil menambahkan posisi',
+                'message' => 'Berhasil menambahkan lahan posisi',
             ]);
         }catch (\Exception $err){
             $this->dispatchBrowserEvent('show-message', [
                 'type' => 'error',
-                'message' => 'Gagal menambahkan posisi',
+                'message' => 'Gagal menambahkan posisi lahan',
             ]);
         }
     }
     public function render()
     {
         $list_lahan = Lahan::all();
-        return view('livewire.kredit.create', compact('list_lahan'));
+        return view('livewire.posisi.create', compact('list_lahan'));
     }
 }

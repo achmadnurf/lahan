@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <div class="section">
-        @livewire('kredit.create')
+        @livewire('posisi.create')
     </div>
 @endsection

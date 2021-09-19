@@ -17,14 +17,14 @@
         <li class="menu-header">Menu</li>
 
         @role('ketua')
-        <li class="{{ request()->is('kredit-authorisasi') ? 'active' : '' }}"><a class="nav-link" href="{{route('authorisasi.index')}}"><i
+        <li class="{{ request()->is('posisi-authorisasi') ? 'active' : '' }}"><a class="nav-link" href="{{route('authorisasi.index')}}"><i
                         class="fas fa-key"></i> <span>Data
-          Kredit Validasi</span></a></li>
+          Posisi Validasi</span></a></li>
         @elserole('bendahara')
-        <li class="{{ request()->is('kredit*') ? 'active' : '' }}"><a class="nav-link"
+        <li class="{{ request()->is('posisi*') ? 'active' : '' }}"><a class="nav-link"
                                                                       href="{{route('validasi.index')}}"><i
                         class="fas fa-key"></i> <span>Data
-          Kredit Validasi</span></a></li>
+          Posisi Validasi</span></a></li>
         <li class="{{ request()->is('slip/pencairan') ? 'active' : '' }}"><a  class="nav-link" href="{{route('slip.index')}}"><i
                         class="fas fa-print"></i> <span>Slip Pencairan</span></a></li>
         <li class="{{ request()->is('laporan/jurnal/bendahara') ? 'active' : '' }}"><a class="nav-link" href="{{route
@@ -36,7 +36,7 @@
     }}"><i class="fas
     fa-users"></i>
                 <span>Data Lahan</span></a></li>
-        <li class="{{ request()->is('kredit*') ? 'active' : '' }}"><a class="nav-link" href="{{route('kredit.index')}}"><i
+        <li class="{{ request()->is('posisi*') ? 'active' : '' }}"><a class="nav-link" href="{{route('posisi.index')}}"><i
                         class="fas fa-credit-card"></i> <span>Data Posisi Lahan</span></a></li>
         @endrole
     </ul>

@@ -5,7 +5,7 @@
             <h1>Data Posisi</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{route('home')}}">Dashboard</a></div>
-                <div class="breadcrumb-item">Kredit</div>
+                <div class="breadcrumb-item">Posisi</div>
             </div>
         </div>
         <div class="section-body">
@@ -19,38 +19,38 @@
                             <div class="form-group row">
                                 <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Pinjam</label>
                                 <div class="col-sm-9">
-                                    <input type="date" disabled value="{{$kredit->tanggal_pinjam}}"
+                                    <input type="date" disabled value="{{$posisi->tanggal_pinjam}}"
                                            class="form-control "
                                            id="tanggal_pinjam">
                                 </div>
                             </div>
                             <div class="form-group row" wire:ignore>
-                                <label for="lahan_id" class="col-sm-3 col-form-label">Nama Lahan</label>
+                                <label for="lahan_id" class="col-sm-3 col-form-label">Nama Lsahan</label>
                                 <div class="col-sm-9">
-                                    <input id="lahan_id" disabled class="form-control" value="{{$kredit->lahan->sertifikat}}"
+                                    <input id="lahan_id" disabled class="form-control" value="{{$posisi->lahan->sertifikat}}"
                                            type="text"/>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="jangka_waktu" class="col-sm-3 col-form-label">Jangka Waktu</label>
+                                <label for="garis_lintang" class="col-sm-3 col-form-label">Jangka Waktu</label>
                                 <div class="col-sm-9">
-                                    <input value="{{$kredit->jangka_waktu}}" placeholder="0" type="text"
+                                    <input value="{{$posisi->garis_lintang}}" placeholder="0" type="text"
                                            class="form-control "
-                                           id="jangka_waktu" disabled>
+                                           id="garis_lintang" disabled>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="jumlah" class="col-sm-3 col-form-label">Jumlah Pinjaman</label>
+                                <label for="garis_litang" class="col-sm-3 col-form-label"> Pinjaman</label>
                                 <div class="col-sm-9">
-                                    <input value="{{$kredit->jumlah}}" class="form-control" id="jumlah"
+                                    <input value="{{$posisi->garis_litang}}" class="form-control" id="garis_litang"
                                            type="text" placeholder="0"/>
                                 </div>
                             </div>
                             
                             <div class="form-group row">
-                                <label for="jumlah" class="col-sm-3 col-form-label">Diatas Permukaan</label>
+                                <label for="garis_bujur" class="col-sm-3 col-form-label">Diatas Permukaan</label>
                                 <div class="col-sm-9">
-                                    <input value="{{$kredit->mdpl}}" class="form-control" id="mdpl"
+                                    <input value="{{$posisi->mdpl}}" class="form-control" id="mdpl"
                                            type="text" placeholder="0"/>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                 <label for="jumlah_angsuran" class="col-sm-3 col-form-label">Jumlah Angsuran</label>
                                 <div class="col-sm-9">
                                     <input disabled class="form-control" id="jumlah_angsuran"
-                                           type="text" placeholder="0" value="($kredit->jumlah_ansuran)"/>
+                                           type="text" placeholder="0" value="($posisi->jumlah_ansuran)"/>
                                 </div>
                             </div> --}}
                         </div>

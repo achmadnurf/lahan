@@ -2,10 +2,10 @@
 @section('content')
     <div class="section">
         <div class="section-header">
-            <h1>Data Kredit Authorisasi</h1>
+            <h1>Data posisi Authorisasi</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{route('home')}}">Dashboard</a></div>
-                <div class="breadcrumb-item">Data Kredit Authorisasi</div>
+                <div class="breadcrumb-item">Data posisi Authorisasi</div>
             </div>
         </div>
         <div class="section-body">
@@ -13,7 +13,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Data Kredit Authorisasi</h4>
+                            <h4>Data posisi Authorisasi</h4>
                             <div class="ml-auto card-header-form">
                                 <form>
                                     <div class="input-group">
@@ -33,31 +33,31 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Tanggal Pinjam</th>
-                                        <th>Nama lahan</th>
+                                        <th>Nama Lahan</th>
                                         <th>Jangka Waktu</th>
                                         {{-- <th>Jumlah Angsuran</th> --}}
                                         <th>Jumlah Pinjaman</th>
                                         <th>Status</th>
                                         <th>Aksi</th>
                                     </tr>
-                                    @if($list_kredit->isEmpty())
+                                    @if($list_posisi->isEmpty())
                                         <tr>
-                                            <td colspan="6" class="text-center">Data kredit yang harus di autorisasi
+                                            <td colspan="6" class="text-center">Data posisi yang harus di autorisasi
                                                 belum tersedia</td>
                                         </tr>
                                     @else
-                                        @foreach($list_kredit as $index => $kredit)
+                                        @foreach($list_posisi as $index => $posisi)
                                             <tr>
                                                 <td>{{$index+1}}</td>
-                                                <td>{{$kredit->tanggal_pinjam}}</td>
-                                                <td>{{$kredit->lahan->sertifikat}}</td>
-                                                <td>{{$kredit->jangka_waktu}} </td>
-                                                <td>{{$kredit->jumlah}}</td>
-                                                <td>{{$kredit->mdpl}}</td>
-                                                <td>{{$kredit->authorisasi ? "Sudah Authorisasi" : "Belum
+                                                <td>{{$posisi->tanggal_pinjam}}</td>
+                                                <td>{{$posisi->lahan->sertifikat}}</td>
+                                                <td>{{$posisi->garis_litang}} </td>
+                                                <td>{{$posisi->garis_bujur}}</td>
+                                                <td>{{$posisi->mdpl}}</td>
+                                                <td>{{$posisi->authorisasi ? "Sudah Authorisasi" : "Belum
                                                 Authorisasi"}}</td>
                                                 <td>
-                                                    <a href="{{route('slip.cetak', ['kredit' => $kredit])}}" class="btn
+                                                    <a href="{{route('slip.cetak', ['posisi' => $posisi])}}" class="btn
                                                        btn-primary">Cetak Slip Pencairan</a>
                                                     
                                                 </td>

@@ -21,10 +21,10 @@
 @section('content')
     <div class="section">
         <div class="section-header">
-            <h1>Laporan Data Kredit</h1>
+            <h1>Laporan Data Posisi</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{route('home')}}">Dashboard</a></div>
-                <div class="breadcrumb-item">Laporan Data Kredit</div>
+                <div class="breadcrumb-item">Laporan Data Posisi</div>
             </div>
         </div>
         <div class="section-body">
@@ -32,7 +32,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Laporan Data Kredit</h4>
+                            <h4>Laporan Data Posisi</h4>
                         </div>
                         <div class="card-body p-0">
                             <div id="print">
@@ -45,7 +45,7 @@
                                             <td width="80%">
                                                 <div align="center">
                                                     <span style="font-size: x-large; ">Koperasi SMAN 4 Cirebon</span><br>
-                                                    <span style="font-size: x-large; ">Laporan Data Kredit lahan</span><br>
+                                                    <span style="font-size: x-large; ">Laporan Data Posisi Lahan</span><br>
                                                     <br>
                                                     <hr >
                                                 </div>
@@ -55,7 +55,7 @@
                                     <table width="80%">
                                         <tr class="text2">
                                             <td>Total</td>
-                                            <td width="90%">: {{$list_kredit->count()}}</td>
+                                            <td width="90%">: {{$list_posisi->count()}}</td>
                                         </tr>
                                     </table >
                                     <table width="80%" border="1" id="isi" class="mt-4">
@@ -70,14 +70,14 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($list_kredit as $index => $kredit)
+                                        @foreach($list_posisi as $index => $posisi)
                                             <tr>
                                                 <td>{{$index+1}}</td>
-                                                <td>{{$kredit->tanggal_pinjam}}</td>
-                                                <td>{{$kredit->lahan->sertifikat}}</td>
-                                                <td>{{$kredit->jangka_waktu}}</td>
-                                                {{-- <td class="nominal">($kredit->jumlah_ansuran)</td> --}}
-                                                <td>{{$kredit->jumlah}}</td>
+                                                <td>{{$posisi->tanggal_pinjam}}</td>
+                                                <td>{{$posisi->lahan->sertifikat}}</td>
+                                                <td>{{$posisi->garis_lintang}}</td>
+                                                {{-- <td class="nominal">($posisi->jumlah_ansuran)</td> --}}
+                                                <td>{{$posisi->garis_bujur}}</td>
                                             </tr>
                                         @endforeach
                                         </tbody>

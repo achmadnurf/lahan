@@ -2,10 +2,10 @@
 @section('content')
     <div class="section">
         <div class="section-header">
-            <h1>Edit lahan</h1>
+            <h1>Edit Lahan</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{route('home')}}">Dashboard</a></div>
-                <div class="breadcrumb-item">Edit lahan</div>
+                <div class="breadcrumb-item">Edit Lahan</div>
             </div>
         </div>
         <div class="section-body">
@@ -16,7 +16,7 @@
                         @method("PUT")
                         <div class="card">
                             <div class="card-header">
-                                <h4>Edit lahan</h4>
+                                <h4>Edit Lahan</h4>
                             </div>
                             <div class="card-body">
                                 <div class="form-group row">
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                             <div  class="card-footer text-right">
-                                <button class="btn btn-primary" type="submit">Simpan Data lahan</button>
+                                <button class="btn btn-primary" type="submit">Simpan Data Lahan</button>
                             </div>
                         </div>
                     </form>

@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
-class Kredit extends Model
+class Posisi extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'tanggal_pinjam',
-        'jangka_waktu',
-        'jumlah',
+        'garis_lintang',
+        'garis_bujur',
         'mdpl',
         'lahan_id',
         'validasi',

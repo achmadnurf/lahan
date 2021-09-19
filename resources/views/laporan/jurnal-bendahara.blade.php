@@ -77,21 +77,21 @@
                                                    <th>Tanggal</th>
                                                    <th>Keterangan</th>
                                                    <th>Debit</th>
-                                                   <th>Kredit</th>
+                                                   <th>Posisi</th>
                                                </tr>
                                                </thead>
                                                <tbody>
-                                               @foreach($list_kredit as $kredit)
+                                               @foreach($list_posisi as $posisi)
                                                    <tr>
-                                                       <td rowspan="2" class="tgl"> {{$kredit->tanggal_pinjam}}</td>
-                                                       <td> Piutang- {{$kredit->lahan->sertifikat}}</td>
-                                                       <td>{{$kredit->jumlah}}</td>
+                                                       <td rowspan="2" class="tgl"> {{$posisi->tanggal_pinjam}}</td>
+                                                       <td> Piutang- {{$posisi->lahan->sertifikat}}</td>
+                                                       <td>{{$posisi->garis_bujur}}</td>
                                                        <td></td>
                                                    </tr>
                                                    <tr>
                                                        <td>Kas</td>
                                                        <td></td>
-                                                       <td>{{$kredit->jumlah}}</td>
+                                                       <td>{{$posisi->garis_bujur}}</td>
                                                    </tr>
                                                @endforeach
                                                </tbody>

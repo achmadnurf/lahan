@@ -16,9 +16,9 @@
                         </form>
                     </div>
                     <div class="ml-auto card-header-action">
-                        <a href="{{route('kredit.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah
+                        <a href="{{route('posisi.create')}}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah
                             Posisi</a>
-                        <a href="{{route('laporan.kredit')}}" class="btn btn-primary"><i class="fa fa-file-export"></i> Laporan
+                        <a href="{{route('laporan.posisi')}}" class="btn btn-primary"><i class="fa fa-file-export"></i> Laporan
                             Data Posisi</a>
                     </div>
                 </div>
@@ -35,14 +35,14 @@
                                 <th>MDPL</th>
                                 <th>Aksi</th>
                             </tr>
-                            @if($list_kredit->isEmpty())
+                            @if($list_posisi->isEmpty())
                                 <tr>
                                     <td colspan="6" class="text-center">Data lahan belum tersedia</td>
                                 </tr>
                             @else
-                                @foreach($list_kredit as $index => $kredit)
-                                    <livewire:kredit.single :kredit="$kredit" :index="$index+1"
-                                                            :key="time().$kredit->id"/>
+                                @foreach($list_posisi as $index => $posisi)
+                                    <livewire:posisi.single :posisi="$posisi" :index="$index+1"
+                                                            :key="time().$posisi->id"/>
                                 @endforeach
                             @endif
                             </tbody>
