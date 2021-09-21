@@ -39,7 +39,7 @@
                                 <div align="center">
                                     <table width="720px">
                                         <tr>
-                                            <td><img src="{{asset('sma.jpg')}}" width="120"></td>
+                                            <td><img src="{{asset('')}}" width="120"></td>
                                             <td id="">
                                                 <div align="center">
                                                     <span style="font-size: large; ">SLIP PENCAIRAN POSISI LAHAN</span><br>

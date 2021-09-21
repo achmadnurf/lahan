@@ -40,11 +40,11 @@
                                     <table class="header" width="80%">
                                         <tr>
                                             <td>
-                                                <img src="{{asset("sma.jpg")}}" width="120" height="120">
+                                                <img src="{{asset("")}}" width="120" height="120">
                                             </td>
                                             <td width="80%">
                                                 <div align="center">
-                                                    <span style="font-size: x-large; ">Koperasi SMAN 4 Cirebon</span><br>
+                                                    <span style="font-size: x-large; ">Manajemen Lahan Citra Siliwangi</span><br>
                                                     <span style="font-size: x-large; ">Laporan Data Posisi Lahan</span><br>
                                                     <br>
                                                     <hr >

@@ -7,7 +7,7 @@
     </div> -->
     <ul class="sidebar-menu">
         <!-- <li class="text-center">
-            <img class="img-fluid" src="{{asset('sma.jpg')}}" alt="" height="150">
+            <img class="img-fluid" src="{{asset('')}}" alt="" height="150">
         </li> -->
         <hr>
         <li class="menu-header">Dashboard</li>
@@ -31,7 +31,7 @@
         ('laporan.jurnal-bendahara')
     }}"><i
                         class="fas fa-sticky-note"></i> <span>Jurnal</span></a></li>
-        @elserole('simpan-pinjam')
+        @elserole('admin')
         <li class="{{ request()->is('lahan*') ? 'active' : '' }}"><a class="nav-link" href="{{route('lahan.index')
     }}"><i class="fas
     fa-users"></i>

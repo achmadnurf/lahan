@@ -9,6 +9,7 @@ class Single extends Component
 {
     public $index;
     public $posisi;
+    
 
     public function mount(Posisi $posisi){
         $this->posisi = $posisi;

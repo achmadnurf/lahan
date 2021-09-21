@@ -50,42 +50,24 @@
                             <div class="form-group row">
                                 <label for="garis_bujur" class="col-sm-3 col-form-label">Diatas Permukaan</label>
                                 <div class="col-sm-9">
-                                    <input value="{{$posisi->mdpl}}" class="form-control" id="mdpl"
+                                    <input disabled value="{{$posisi->mdpl}}" class="form-control" id="mdpl"
                                            type="text" placeholder="0"/>
                                 </div>
                             </div>
-                            {{-- <div class="form-group row">
-                                <label for="jumlah_angsuran" class="col-sm-3 col-form-label">Jumlah Angsuran</label>
-                                <div class="col-sm-9">
-                                    <input disabled class="form-control" id="jumlah_angsuran"
-                                           type="text" placeholder="0" value="($posisi->jumlah_ansuran)"/>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Status Lahan</h4>
+                            <h4>Detail Lahan</h4>
                         </div>
                         <div class="card-body">
-                            <div class="form-group row">
-                                <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Status Validasi</label>
+                            <label for="status" class="col-sm-3 col-form-label">Status</label>
                                 <div class="col-sm-9">
-                                    <input type="text" disabled value="Belum Validasi"
-                                           class="form-control "
-                                           id="tanggal_pinjam">
+                                    <input disabled value="{{""}}" class="form-control" id="status"
+                                           type="text" placeholder="tanaman"/>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Status Otorisasi</label>
-                                <div class="col-sm-9">
-                                    <input type="text" disabled value="Belum Otorisasi"
-                                           class="form-control "
-                                           id="tanggal_pinjam">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -28,16 +28,16 @@ class DatabaseSeeder extends Seeder
             'role' => 'bendahara'
         ]);
         User::create([
-            'name' => 'Simpan Pinjam',
-            'username' => 'simpanpinjam',
-            'password' => \Hash::make('simpanpinjam'),
-            'role' => 'simpan-pinjam'
-        ]);
-        User::create([
             'name' => 'Admin',
             'username' => 'admin',
             'password' => \Hash::make('admin'),
             'role' => 'admin'
         ]);
+        // User::create([
+        //     'name' => 'Admin',
+        //     'username' => 'admin',
+        //     'password' => \Hash::make('admin'),
+        //     'role' => 'admin'
+        // ]);
     }
 }

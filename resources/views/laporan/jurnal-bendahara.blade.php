@@ -63,11 +63,11 @@
                                <div class="col-md-8">
                                    <div id="print">
                                        <div align="center">
-                                           <!-- <img src="{{asset('sma.jpg')}}" width="130" height="150"><br> -->
-                                           <span style="font-size: large; "><b>KOPERASI SMAN 4 CIREBON</b></span><br><br>
-                                           <span style="font-size: medium; "><b>jln Perjuangan 01 Karyamulya Kesambi Kota Cirebon</b></span><br>
-                                           <span style="font-size: medium; "><b>Jurnal Umum</b></span><br><br><br>
-                                           <span style="font-style: italic; font-size: small; ">Periode 2020-2021</span>
+                                           <!-- <img src="{{asset('')}}" width="130" height="150"><br> -->
+                                           <span style="font-size: large; "><b>Manajemen Lahan Citra Siliwangi</b></span><br><br>
+                                           <span style="font-size: medium; "><b>Bandung</b></span><br>
+                                           <span style="font-size: medium; "><b></b></span><br><br><br>
+                                           <span style="font-style: italic; font-size: small; ">Periode 2021-2022</span>
 
                                            <table border="2" style="border-color: black; border-width: 2px;"
                                                   width="720px"

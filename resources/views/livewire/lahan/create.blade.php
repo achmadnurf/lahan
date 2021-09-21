@@ -37,8 +37,14 @@
                     <div class="form-group row">
                         <label for="status" class="col-sm-3 col-form-label">status Lahan</label>
                         <div class="col-sm-9">
-                        <textarea wire:model.lazy="status" class="form-control" id="status"
-                                      placeholder="Status" rows="3000"></textarea>
+                        <select wire:model.lazy="status" class="form-control" id="status"
+                                      placeholder="Status">
+                                      <option></option>
+                                      <option value="Kerja Sama">Kerja Sama</option>
+                                      <option value="Lahan Kosong">Lahan Kosong</option>
+                                      <option value="Garap Sebagian">Garap Sebagian</option>
+                                      <option value="Kerja Sama Sebagian">Kerja Sama Sebagian</option>
+                                    </select>
                         </div>
                     </div>
                 </div>

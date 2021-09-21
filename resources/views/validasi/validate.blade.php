@@ -16,14 +16,6 @@
                             <h4>Validasi Data posisi</h4>
                         </div>
                         <div class="card-body">
-                            <div class="form-group row">
-                                <label for="tanggal_pinjam" class="col-sm-3 col-form-label">Tanggal Pinjam</label>
-                                <div class="col-sm-9">
-                                    <input type="date" disabled value="{{$posisi->tanggal_pinjam}}"
-                                           class="form-control "
-                                           id="tanggal_pinjam">
-                                </div>
-                            </div>
                             <div class="form-group row" wire:ignore>
                                 <label for="lahan_id" class="col-sm-3 col-form-label">Nama Lahan</label>
                                 <div class="col-sm-9">
@@ -33,7 +25,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="garis_lintang" class="col-sm-3 col-form-label">Jangka Waktu</label>
+                                <label for="garis_lintang" class="col-sm-3 col-form-label">Garis Lintang</label>
                                 <div class="col-sm-9">
                                     <input value="{{$posisi->garis_lintang}}" placeholder="0" type="text"
                                            class="form-control "
@@ -42,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="garis_bujur" class="col-sm-3 col-form-label"> Pinjaman</label>
+                                <label for="garis_bujur" class="col-sm-3 col-form-label">Garis Bujur</label>
                                 <div class="col-sm-9">
                                     <input value="{{$posisi->garis_bujur}}" class="form-control" id="garis_bujur"
                                            type="text" placeholder="0"/>

@@ -13,6 +13,7 @@ class Create extends Component
     public $garis_lintang;
     public $garis_bujur;
     public $mdpl;
+    public $status;
 
     protected $rules = [
         'lahan_id' => 'required',
