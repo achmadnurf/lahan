@@ -15,11 +15,13 @@ class CreateLahansTable extends Migration
     {
         Schema::create('lahans', function (Blueprint $table) {
             $table->id();
-            $table->string('sertifikat');
-            $table->string('kwitansi');
+            $table->string('nama');
             $table->string('lokasi');
+            $table->string('dokumen');
             $table->string('luas');
-            $table->string('status');
+            $table->string('sppt');
+            $table->string('jenis_tanah');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

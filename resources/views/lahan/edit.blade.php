@@ -19,21 +19,36 @@
                                 <h4>Edit Lahan</h4>
                             </div>
                             <div class="card-body">
-                                <div class="form-group row">
-                                    <label for="sertifikat" class="col-sm-3 col-form-label">Nomor Sertifikat</label>
+                            <div class="form-group row">
+                                    <label for="nama" class="col-sm-3 col-form-label">Nama Pemilik</label>
                                     <div class="col-sm-9">
-                                        <input name="sertifikat" value="{{$lahan->sertifikat}}" type="text" class="form-control "
-                                               id="sertifikat"
-                                               placeholder="No Sertifikat">
+                                        <input name="nama" value="{{$lahan->nama}}" type="text" class="form-control"
+                                               id="nama"
+                                               placeholder="Nama Pemilik">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="kwitansi" class="col-sm-3 col-form-label">Kwitansi</label>
+                                    <label for="lokasi" class="col-sm-3 col-form-label">Lokasi Lahan</label>
                                     <div class="col-sm-9">
-                                        <input name="kwitansi" type="text" value="{{$lahan->kwitansi}}"
-                                               class="form-control " id="kwitansi"
-                                               placeholder="kwitansi">
+                                    <input name="lokasi"  value="{{$lahan->lokasi}}" type="text" class="form-control" 
+                                            id="lokasi" placeholder="lokasi">
                                     </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="dokumen" class="col-sm-3 col-form-label">Dokumen</label>
+                                    <div class="col-sm-9">
+                                        <input name="dokumen" value="{{$lahan->dokumen}}" type="text" class="form-control "
+                                               id="dokumen"
+                                               placeholder="Dokumen">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="sppt" class="col-sm-3 col-form-label">No. SPPT (NOP)</label>
+                                     <div class="col-sm-9">
+                                    <input name="sppt" value="{{$lahan->sppt}}" type="text" class="form-control" 
+                                            id="sppt"
+                                   placeholder="No. SPPT (NOP)">
+                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="luas" class="col-sm-3 col-form-label">Luas Lahan</label>
@@ -44,20 +59,24 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="lokasi" class="col-sm-3 col-form-label">Lokasi Lahan</label>
+                                    <label for="jenis_tanah" class="col-sm-3 col-form-label">Jenis Tanah</label>
                                     <div class="col-sm-9">
-                            <textarea name="lokasi"  class="form-control" id="lokasi"
-                                      placeholder="lokasi" rows="3000">{{$lahan->lokasi}}</textarea>
+                                    <select name="jenis_tanah" value="{{$lahan->jenis_tanah}}" type="text" class="form-control" 
+                                      id="jenis_tanah"
+                                      placeholder="Jenis Tanah">
+                                      <option value="Darat">Darat</option>
+                                      <option value="Tanah Kosong">Tanah Kosong</option>
+                                    </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="status" class="col-sm-3 col-form-label">Status Lahan</label>
+                                    <label for="keterangan" class="col-sm-3 col-form-label">Keterangan</label>
                                     <div class="col-sm-9">
-                            <textarea name="status"  class="form-control" id="status"
-                                      placeholder="status" rows="3000">{{$lahan->status}}</textarea>
+                                        <input name="keterangan" value="{{$lahan->keterangan}}" type="text" class="form-control"
+                                               id="keterangan"
+                                               placeholder="Keterangan">
                                     </div>
                                 </div>
-                            </div>
                             <div  class="card-footer text-right">
                                 <button class="btn btn-primary" type="submit">Simpan Data Lahan</button>
                             </div>

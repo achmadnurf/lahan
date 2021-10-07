@@ -18,6 +18,7 @@ class Single extends Component
         $this->lahan->delete();
         $this->emit('lahanDeleted');
     }
+
     public function render()
     {
         return view('livewire.lahan.single');

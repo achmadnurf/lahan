@@ -84,7 +84,7 @@
                                                @foreach($list_posisi as $posisi)
                                                    <tr>
                                                        <td rowspan="2" class="tgl"> {{$posisi->tanggal_pinjam}}</td>
-                                                       <td> Piutang- {{$posisi->lahan->sertifikat}}</td>
+                                                       <td> Piutang- {{$posisi->lahan->dokumen}}</td>
                                                        <td>{{$posisi->garis_bujur}}</td>
                                                        <td></td>
                                                    </tr>

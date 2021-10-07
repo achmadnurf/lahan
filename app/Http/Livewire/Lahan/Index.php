@@ -24,4 +24,5 @@ class Index extends Component
         $list_lahan = $list_lahan->paginate(10);
         return view('livewire.lahan.index', compact('list_lahan'));
     }
+
 }

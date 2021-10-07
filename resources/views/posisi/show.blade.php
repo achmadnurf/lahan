@@ -27,7 +27,7 @@
                             <div class="form-group row" wire:ignore>
                                 <label for="lahan_id" class="col-sm-3 col-form-label">Lahan</label>
                                 <div class="col-sm-9">
-                                    <input id="lahan_id" disabled class="form-control" value="{{$posisi->lahan->sertifikat}}"
+                                    <input id="lahan_id" disabled class="form-control" value="{{$posisi->lahan->dokumen}}"
                                            type="text"/>
                                 </div>
                             </div>

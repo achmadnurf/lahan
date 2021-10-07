@@ -74,7 +74,7 @@
                                             <tr>
                                                 <td>{{$index+1}}</td>
                                                 <td>{{$posisi->tanggal_pinjam}}</td>
-                                                <td>{{$posisi->lahan->sertifikat}}</td>
+                                                <td>{{$posisi->lahan->dokumen}}</td>
                                                 <td>{{$posisi->garis_lintang}}</td>
                                                 {{-- <td class="nominal">($posisi->jumlah_ansuran)</td> --}}
                                                 <td>{{$posisi->garis_bujur}}</td>

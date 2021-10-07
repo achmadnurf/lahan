@@ -1,7 +1,7 @@
 <tr>
     <td>{{$index}}</td>
     {{-- <td>{{$posisi->tanggal_pinjam}}</td> --}}
-    <td>{{$posisi->lahan->sertifikat}}</td>
+    <td>{{$posisi->lahan->dokumen}}</td>
     <td>{{$posisi->garis_lintang}} <sup>° </td>
     <td>{{$posisi->garis_bujur}} <sup>° </td>
     {{-- <td>{{$posisi->status}}</td> --}}

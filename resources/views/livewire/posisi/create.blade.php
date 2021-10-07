@@ -18,7 +18,7 @@
                             <select id="lahan_id" name="lahan_id" class="form-control select2">
                                 <option selected>--- Pilih Sertif/Ajb ---</option>
                                 @foreach($list_lahan as $lahan)
-                                    <option value="{{$lahan->id}}">{{$lahan->sertifikat}}</option>
+                                    <option value="{{$lahan->id}}">{{$lahan->dokumen}}</option>
                                 @endforeach
                             </select>
                         </div>

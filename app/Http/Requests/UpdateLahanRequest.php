@@ -24,11 +24,13 @@ class UpdateLahanRequest extends FormRequest
     public function rules()
     {
         return [
-            'sertifikat' => 'required',
-            'kwitansi' => 'required',
-            'luas' => 'required',
-            'lokasi' => 'required',
-            'status' => 'status'
+            'nama'      => 'required',
+            'dokumen'   => 'required',
+            'luas'      => 'required',
+            'sppt'      => 'required',
+            'lokasi'    => 'required',
+            'keterangan' => 'required',
+            'jenis_tanah' => 'required',
             // 'sertifikat' => 'required',
             // 'ajb' => 'required',
             // 'lokasi' => 'required',

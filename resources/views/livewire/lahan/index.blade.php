@@ -25,13 +25,15 @@
                         <table class="table table-striped">
                             <tbody>
                             <tr>
-                                <th>No</th>
-                                <th>Nomor Sertifikat</th>
-                                <th>Kwitansi</th>
-                                <th>Lokasi</th>
-                                <th>Luas Lahan</th>
-                                <th>Status</th>
-                                <th>Aksi</th>
+                                <th>NO</th>
+                                <th>NAMA PEMILIK</th>
+                                <th>LOKASI</th>
+                                <th>DOKUMEN</th>
+                                <th>LUAS LAHAN</th>
+                                <th>JENIS TANAH</th>
+                                <th>NO. SPPT (NOP)</th>
+                                <th>KETERANGAN</th>
+                                <th>AKSI</th>
                             </tr>
                             @if($list_lahan->isEmpty())
                                 <tr>

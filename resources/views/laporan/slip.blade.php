@@ -58,7 +58,7 @@
                                     <table>
                                         <tr class="text2">
                                             <td>Nama</td>
-                                            <td width="572">: {{$posisi->lahan->sertifikat}}</td>
+                                            <td width="572">: {{$posisi->lahan->dokumen}}</td>
                                         </tr>
                                         <tr>
                                             <td>Jumlah</td>
@@ -77,7 +77,7 @@
 
                                     <table width="625">
                                         <tr>
-                                            <td width="50%" class="text" align="center">{{$posisi->lahan->sertifikat}}</td>
+                                            <td width="50%" class="text" align="center">{{$posisi->lahan->dokumen}}</td>
                                             <td width="50%" class="text" align="center">Ketua</td>
                                         </tr>
 

@@ -7,11 +7,13 @@ use Livewire\Component;
 
 class Create extends Component
 {
-    public $sertifikat;
-    public $kwitansi;
-    public $luas;
+    public $nama;
     public $lokasi;
-    public $status;
+    public $dokumen;
+    public $luas;
+    public $sppt;
+    public $jenis_tanah;
+    public $keterangan;
     // public $sertifikat;
     // public $ajb;
     // public $lokasi;
@@ -28,11 +30,13 @@ class Create extends Component
     // public $kemiringan;
 
     protected $rules = [
-        'sertifikat'=> 'required',
-        'kwitansi'  => 'required',
-        'luas'      => 'required',
-        'lokasi'    => 'required',
-        'status'    => 'required'
+        'nama'           => 'required',
+        'lokasi'         => 'required',
+        'dokumen'        => 'required',
+        'luas'           => 'required',
+        'sppt'           => 'required',
+        'jenis_tanah'    => 'required',
+        'keterangan'     => 'required'
         // 'sertifikat' => 'required',
         // 'ajb' => 'required',
         // 'lokasi' => 'required',

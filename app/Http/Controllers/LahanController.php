@@ -48,7 +48,7 @@ class LahanController extends Controller
      * Display the specified resource.
      *
      * @param Lahan $Lahan
- lahanreturn Response
+     * @return Response
      */
     public function show(Lahan $lahan)
     {
@@ -59,7 +59,7 @@ class LahanController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param Lahan $Lahan
- lahanreturn View
+     * @return View
      */
     public function edit(Lahan $lahan): View
     {
@@ -71,7 +71,7 @@ class LahanController extends Controller
      *
      * @param UpdateLahanRequest $request
      * @param Lahan $Lahan
- lahanreturn RedirectResponse
+     * @return Response
      */
     public function update(UpdateLahanRequest $request, Lahan $lahan)
     {
