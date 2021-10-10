@@ -7,8 +7,8 @@
                     <div class="card-header-form">
                         <form>
                             <div class="input-group">
-                                <input type="text" wire:model="search" name="search" class="form-control"
-                                       placeholder="Search">
+                                <input type="text" wire:model="search" class="form-control"
+                                       placeholder="Search" aria-label="search">
                                 <div class="input-group-btn">
                                     <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                 </div>
