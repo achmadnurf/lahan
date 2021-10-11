@@ -9,7 +9,6 @@ class Index extends Component
 {
     public $search;
     protected $queryString = ['search'=> ['except' => '']];
-    public $limitPerPage = 10;
     protected $listeners = [
         'lahanDeleted'
     ];
@@ -23,11 +22,10 @@ class Index extends Component
 
     public function render()
     {
-        $list_lahan = Lahan::latest()->paginate($this->limitPerPage);
+        $list_lahan = Lahan::orderBy('created_at', 'desc')->paginate(10);
         
         if ($this->search !== null){
-            $list_lahan = Lahan::where('dokumen','like','%' . $this->search . '%')
-            ->latest()->paginate($this->limitPerPage);
+            $list_lahan = Lahan::where('dokumen','like','%' . $this->search . '%')->paginate(10);
         }
         $this->emit('lahanStore');
         // $list_lahan = Lahan::query();

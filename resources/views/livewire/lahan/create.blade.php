@@ -47,6 +47,7 @@
                         <select wire:model.lazy="jenis_tanah" class="form-control" id="jenis_tanah"
                                       placeholder="Jenis Tanah">
                                       <option value=" " ></option>
+                                      <option value="-">-</option>
                                       <option value="Darat">Darat</option>
                                       <option value="Tanah Kosong">Tanah Kosong</option>
                                     </select>

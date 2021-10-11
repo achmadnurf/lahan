@@ -47,7 +47,16 @@
                             @endif
                             </tbody>
                         </table>
-                    </div>
+                    <div class="card-body p-0">
+                    <br>
+                        {{ $list_lahan->links() }} 
+                    </br>
+                        Data Per Halaman : {{ $list_lahan->perPage() }}
+                    <br>
+                        Jumlah Data : {{ $list_lahan->total() }}
+                     <br/>
+    </div>    
+                </div>
                 </div>
                 <div class="card-footer text-center">
 
