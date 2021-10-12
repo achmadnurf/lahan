@@ -44,12 +44,12 @@
                                     <livewire:lahan.single :lahan="$lahan" :index="$index+1" :key="time()
                                     .$lahan->id"/>
                                 @endforeach
-                            @endif
+                                @endif
                             </tbody>
                         </table>
-                    <div class="card-body p-0">
-                    <br>
-                        {{ $list_lahan->links() }} 
+                        <div class="card-body p-0">
+                            <br>
+                            {{ $list_lahan->links() }} 
                     </br>
                         Data Per Halaman : {{ $list_lahan->perPage() }}
                     <br>

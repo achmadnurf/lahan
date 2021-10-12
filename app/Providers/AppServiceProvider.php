@@ -5,6 +5,7 @@ namespace App\Providers;
 use Auth;
 use Blade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 use URL;
 
 class AppServiceProvider extends ServiceProvider
@@ -29,9 +30,8 @@ class AppServiceProvider extends ServiceProvider
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }
-        Blade::directive('rp', function ($garis_bujur){
-            return "Rp. <?php echo number_format($garis_bujur,0,',','.'); ?>";
-        });
+       Paginator::useBootstrap();
+        
 
         Blade::if('role', function ($value){
             $roles = explode("|", $value);

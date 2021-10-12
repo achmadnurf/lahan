@@ -22,7 +22,7 @@ class Index extends Component
 
     public function render()
     {
-        $list_lahan = Lahan::orderBy('created_at', 'desc')->paginate(10);
+        $list_lahan = Lahan::orderBy('created_at', 'asc')->paginate(10);
         
         if ($this->search !== null){
             $list_lahan = Lahan::where('dokumen','like','%' . $this->search . '%')->paginate(10);
