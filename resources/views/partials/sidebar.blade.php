@@ -38,6 +38,11 @@
                 <span>Data Lahan</span></a></li>
         <li class="{{ request()->is('posisi*') ? 'active' : '' }}"><a class="nav-link" href="{{route('posisi.index')}}"><i
                         class="fas fa-credit-card"></i> <span>Data Posisi Lahan</span></a></li>
+        @elserole('guest')
+        <li class="{{ request()->is('lahan*') ? 'active' : '' }}"><a class="nav-link" href="{{route('lahan.create')
+    }}"><i class="fas
+    fa-users"></i>
+                <span>Entry Data Lahan</span></a></li>
         @endrole
     </ul>
 </aside>

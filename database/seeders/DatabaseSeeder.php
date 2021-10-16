@@ -33,11 +33,11 @@ class DatabaseSeeder extends Seeder
             'password' => \Hash::make('admin'),
             'role' => 'admin'
         ]);
-        // User::create([
-        //     'name' => 'Admin',
-        //     'username' => 'admin',
-        //     'password' => \Hash::make('admin'),
-        //     'role' => 'admin'
-        // ]);
+        User::create([
+            'name' => 'Guest',
+            'username' => 'guest',
+            'password' => \Hash::make('guest'),
+            'role' => 'guest'
+        ]);
     }
 }
