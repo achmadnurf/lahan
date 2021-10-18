@@ -9,7 +9,7 @@
         <!-- <li class="text-center">
             <img class="img-fluid" src="{{asset('')}}" alt="" height="150">
         </li> -->
-        <hr>
+        <!-- <hr> -->
         <li class="menu-header">Dashboard</li>
         <li class="{{ request()->is('home') ? 'active' : '' }}"><a class="nav-link" href="{{ route('home') }}"><i
                         class="fas
