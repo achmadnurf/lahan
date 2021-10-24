@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class LaporanKontroller extends Controller
 {
-    public function kridit(){
+    public function posisi(){
         $list_posisi = Posisi::all();
         return view('laporan.posisi', compact('list_posisi'));
     }

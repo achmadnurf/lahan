@@ -16,6 +16,8 @@ class Index extends Component
         'posisiDeleted',
     ];
 
+    public $long, $lat;
+
     public function posisiDeleted(){
         $this->dispatchBrowserEvent('show-message',[
             'type' => 'success',
