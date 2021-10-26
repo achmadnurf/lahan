@@ -32,7 +32,6 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Laporan Data Posisi</h4>
                         </div>
                         <div class="card-body p-0">
                             <div id="print">
@@ -54,7 +53,7 @@
                                     </table>
                                     <table width="80%">
                                         <tr class="text2">
-                                            <td>Total</td>
+                                            <td>Total Lahan</td>
                                             <td width="90%">: {{$list_posisi->count()}}</td>
                                         </tr>
                                     </table >
@@ -62,21 +61,18 @@
                                         <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Tanggal Pinjaman</th>
                                             <th>Nama Lahan</th>
-                                            <th>Jangka Waktu</th>
-                                            <th>Jumlah Anggaran</th>
-                                            <th>Jumlah Pinjaman</th>
+                                            <th>Garis Lintang</th>
+                                            <th>Garis Bujur</th>
+                                            <th>MDPL</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         @foreach($list_posisi as $index => $posisi)
                                             <tr>
                                                 <td>{{$index+1}}</td>
-                                                <td>{{$posisi->tanggal_pinjam}}</td>
                                                 <td>{{$posisi->lahan->dokumen}}</td>
                                                 <td>{{$posisi->garis_lintang}}</td>
-                                                {{-- <td class="nominal">($posisi->jumlah_ansuran)</td> --}}
                                                 <td>{{$posisi->garis_bujur}}</td>
                                             </tr>
                                         @endforeach

@@ -5,6 +5,7 @@ use App\Http\Controllers\BendaharaController;
 use App\Http\Controllers\PosisiController;
 use App\Http\Controllers\LaporanKontroller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\MapLocation;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,8 @@ Auth::routes([
     'register' => true,
 ]);
 
+Route::get('/map', MapLocation::class);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class,
     'index'])->name('home');
 Route::middleware(['auth'])->group(function () {
@@ -41,7 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('posisi-authorisasi/{posisi}', [BendaharaController::class, 'authorizePosisi'])->name('authorisasi.authorize');
     Route::get('posisi-validasi/{posisi}', [BendaharaController::class, 'validasi'])->name('validasi');
     Route::put('posisi-validasi/{posisi}', [BendaharaController::class, 'store'])->name('validate');
-    Route::get('laporan/posisi', [LaporanKontroller::class, 'kridit'])->name('laporan.posisi');
+    Route::get('laporan/posisi', [LaporanKontroller::class, 'posisi'])->name('laporan.posisi');
     Route::get('laporan/jurnal/bendahara', [LaporanKontroller::class, 'jurnalBendahara'])->name('laporan.jurnal-bendahara');
     Route::get('slip/pencairan', [BendaharaController::class, 'slipPencairanIndex'])->name('slip.index');
     Route::get('slip/{posisi}', [BendaharaController::class, 'cetakSlip'])->name('slip.cetak');

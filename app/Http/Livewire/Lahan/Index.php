@@ -7,6 +7,8 @@ use Livewire\Component;
 
 class Index extends Component
 {
+    public $long, $lat;
+
     public $search;
     protected $queryString = ['search'=> ['except' => '']];
     protected $listeners = [
