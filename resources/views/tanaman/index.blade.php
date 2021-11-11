@@ -2,12 +2,12 @@
 @section('content')
     <div class="section">
         <div class="section-header">
-            <h1>Data Lahan Berdasarkan Tanaman</h1>
+            <h1>Daftar Lahan Berdasarkan Jenis Tanaman</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{route('home')}}">Dashboard</a></div>
                 <div class="breadcrumb-item">Data Lahan</div>
             </div>
         </div>
-        @livewire('lahan.index')
+        @livewire('tanaman.index')
     </div>
 @endsection

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateLahanRequest extends FormRequest
+class UpdateTanamanRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,14 +24,14 @@ class UpdateLahanRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama'      => 'required',
-            'dokumen'   => 'required',
-            'luas'      => 'required',
-            'sppt'      => 'required',
-            'lokasi'    => 'required',
-            'keterangan' => 'required',
-            'jenis_tanah' => 'required',
-            'tanaman' => 'required',
+            'lokasi'      => 'required',
+            'jenis_tanah'   => 'required',
+            'jenis_tanaman'      => 'required',
+            'pemilik_tanaman'      => 'required',
+            'petani_penggarap'    => 'required',
+            // 'keterangan' => 'required',
+            // 'jenis_tanah' => 'required',
+            // 'tanaman' => 'required',
             // 'sertifikat' => 'required',
             // 'ajb' => 'required',
             // 'lokasi' => 'required',

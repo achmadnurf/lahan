@@ -10,7 +10,8 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-8">
-                                <div wire:ignore id='map' style='width: 100%; height: 400px;'></div>
+                                <div wire:ignore id='map' style='width: 100%; height: 400px;'>
+                            </div>
                             </div>
                             <div class="card-body">
                                 <h4>Koordinat</h4>
@@ -26,8 +27,25 @@
                             
                         
                     </div>
+                    <div id="map"></div>
+ 
+<div id="menu">
+<input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
+<!-- See a list of Mapbox-hosted public styles at -->
+<!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+<label for="satellite-v9">satellite</label>
+<input id="light-v10" type="radio" name="rtoggle" value="light">
+<label for="light-v10">light</label>
+<input id="dark-v10" type="radio" name="rtoggle" value="dark">
+<label for="dark-v10">dark</label>
+<input id="streets-v11" type="radio" name="rtoggle" value="streets">
+<label for="streets-v11">streets</label>
+<input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors">
+<label for="outdoors-v11">outdoors</label>
+</div>
                     
                     @push('scripts')
+                    
                     
                     <script>
                         document.addEventListener('livewire:load', () => {
@@ -40,6 +58,16 @@
                         style: 'mapbox://styles/mapbox/streets-v11'
                       });
                         
+                        const layerList = document.getElementById('menu');
+                        const inputs = layerList.getElementsByTagName('input');
+                        
+                        for (const input of inputs) {
+                        input.onclick = (layer) => {
+                        const layerId = layer.target.id;
+                        map.setStyle('mapbox://styles/mapbox/' + layerId);
+                        };
+                        }
+                        
 
                       //search
                       map.addControl(
@@ -48,6 +76,10 @@
                               mapboxgl: mapboxgl
                           })
                       )
+
+                      
+
+                      
 
                       map.addControl(new mapboxgl.NavigationControl())
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LahanController;
+use App\Http\Controllers\TanamanController;
 use App\Http\Controllers\BendaharaController;
 use App\Http\Controllers\PosisiController;
 use App\Http\Controllers\LaporanKontroller;
@@ -34,6 +35,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resources([
         'posisi' => PosisiController::class,
         'lahan' => LahanController::class,
+        'tanaman' => TanamanController::class,
     ], [
         'parameters' => [
             'lahan' => 'lahan'
