@@ -12,6 +12,8 @@ class Create extends Component
     public $jenis_tanaman;
     public $pemilik_tanaman;
     public $petani_penggarap;
+    public $lintang_selatan;
+    public $bujur_timur;
     // public $sertifikat;
     // public $ajb;
     // public $lokasi;
@@ -33,6 +35,8 @@ class Create extends Component
         'jenis_tanaman'      => 'required',
         'pemilik_tanaman'    => 'required',
         'petani_penggarap'   => 'required',
+        'lintang_selatan'    => 'required',
+        'bujur_timur'        => 'required',
         // 'sertifikat' => 'required',
         // 'ajb' => 'required',
         // 'lokasi' => 'required',

@@ -21,10 +21,29 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                                    <label for="lintang_selatan" class="col-sm-3 col-form-label">Lintang Selatan</label>
+                                    <div class="col-sm-9">
+                                    <input wire:model.lazy="lintang_selatan" type="text" class="form-control " id="lintang_selatan"
+                                   placeholder="°">
+                                    </div>
+                    </div>
+                    <div class="form-group row">
+                                    <label for="bujur_timur" class="col-sm-3 col-form-label">Bujur Timur</label>
+                                     <div class="col-sm-9">
+                                    <input wire:model.lazy="bujur_timur" type="text" class="form-control " id="bujur_timur"
+                                   placeholder="°">
+                                     </div>
+                    </div>
+                    <div class="form-group row">
                         <label for="jenis_tanah" class="col-sm-3 col-form-label">Jenis Tanah</label>
                         <div class="col-sm-9">
-                            <input wire:model.lazy="jenis_tanah" type="text" class="form-control " id="jenis_tanah"
-                                   placeholder="Jenis Tanah">
+                        <select wire:model.lazy="jenis_tanah" class="form-control" id="jenis_tanah"
+                                      placeholder="Jenis Tanah">
+                                      <option value=" " ></option>
+                                      <option value="-">-</option>s
+                                      <option value="Darat">Darat</option>
+                                      <option value="Tanah Kosong">Tanah Kosong</option>
+                                    </select>
                         </div>
                     </div>
                     <div class="form-group row">

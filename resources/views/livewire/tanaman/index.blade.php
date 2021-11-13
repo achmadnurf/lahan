@@ -26,12 +26,14 @@
                             <tbody>
                             <tr>
                             <th>NO</th>
-                                <th>LOKASI</th>
-                                <th>JENIS TANAH</th>
-                                <th>JENIS TANAMAN</th>
-                                <th>PEMILIK TANAMAN</th>
-                                <th>PETANI PENGGARAP</th>
-                                <th>AKSI</th>
+                                <th>Lokasi Lahan</th>
+                                <th>Lintang Selatan</th>
+                                <th>Bujur Timur</td>
+                                <th>Jenis Tanah</th>
+                                <th>Jenis Tanaman</th>
+                                <th>Pemilik Tanaman</th>
+                                <th>Petani Penggarap</th>
+                                <th>Aksi</th>
                             </tr>
                             @if($list_tanaman->isEmpty())
                                 <tr>
@@ -49,9 +51,9 @@
                             <br>
                             {{ $list_tanaman->links() }} 
                     </br>
-                        Data Per Halaman : {{ $list_tanaman->perPage() }}
+                        &nbsp;&nbsp;&nbsp;Data Per Halaman : {{ $list_tanaman->perPage() }}
                     <br>
-                        Jumlah Data : {{ $list_tanaman->total() }}
+                        &nbsp;&nbsp;&nbsp;Jumlah Data : {{ $list_tanaman->total() }}
                      <br/>
     </div>    
                 </div>

@@ -15,5 +15,7 @@ class Tanaman extends Model
         'jenis_tanaman',
         'pemilik_tanaman',
         'petani_penggarap',
+        'lintang_selatan',
+        'bujur_timur',
     ];
 }

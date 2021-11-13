@@ -19,12 +19,28 @@
                                 <h4>Edit Lahan</h4>
                             </div>
                             <div class="card-body">
-                            <div class="form-group row">
+                                <div class="form-group row">
                                     <label for="lokasi" class="col-sm-3 col-form-label">Lokasi</label>
                                     <div class="col-sm-9">
                                         <input name="lokasi" value="{{$tanaman->lokasi}}" type="text" class="form-control"
                                                id="lokasi"
                                                placeholder="Lokasi">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lintang_selatan" class="col-sm-3 col-form-label">Lintang Selatan</label>
+                                    <div class="col-sm-9">
+                                        <input name="lintang_selatan" value="{{$tanaman->lintang_selatan}}" type="text" class="form-control "
+                                               id="lintang_selatan"
+                                               placeholder="Petani Penggarap">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="bujur_timur" class="col-sm-3 col-form-label">Bujur Timur</label>
+                                    <div class="col-sm-9">
+                                        <input name="bujur_timur" value="{{$tanaman->bujur_timur}}" type="text" class="form-control "
+                                               id="bujur_timur"
+                                               placeholder="Bujur Timur">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -58,6 +74,7 @@
                                                placeholder="Petani Penggarap">
                                     </div>
                                 </div>
+                                
                                 
                             <div  class="card-footer text-right">
                                 <button class="btn btn-primary" type="submit">Simpan Data Lahan</button>

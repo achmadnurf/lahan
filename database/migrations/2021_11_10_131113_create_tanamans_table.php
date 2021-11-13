@@ -20,6 +20,8 @@ class CreateTanamansTable extends Migration
             $table->string('jenis_tanaman');
             $table->string('pemilik_tanaman');
             $table->string('petani_penggarap');
+            $table->string('lintang_selatan');
+            $table->string('bujur_timur');
             $table->timestamps();
         });
     }
