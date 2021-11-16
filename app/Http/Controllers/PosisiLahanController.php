@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Posisi;
 use Illuminate\Http\Request;
+use App\Models\Posisi;
 
-class BendaharaController extends Controller
+class PosisiLahanController extends Controller
 {
     public function index(){
         $list_posisi = posisi::query();
@@ -49,5 +49,4 @@ class BendaharaController extends Controller
     public function cetakSlip(Request $request, Posisi $posisi){
         return view('laporan.slip', compact('posisi'));
     }
-
 }

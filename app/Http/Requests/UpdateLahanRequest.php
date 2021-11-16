@@ -30,8 +30,7 @@ class UpdateLahanRequest extends FormRequest
             'sppt'      => 'required',
             'lokasi'    => 'required',
             'keterangan' => 'required',
-            'jenis_tanah' => 'required',
-            'tanaman' => 'required',
+            'jenis_tanah' => 'required'
             // 'sertifikat' => 'required',
             // 'ajb' => 'required',
             // 'lokasi' => 'required',

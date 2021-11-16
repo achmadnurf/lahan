@@ -88,7 +88,7 @@
                 <!-- <h4 class="card-title">Managemen Lahan </h4> -->
                 <div class="ml-auto card-header-action">
                     <a href="{{route('login')}}" class="btn btn-outline-primary">Login</a>
-                    <a href="{{ url('/register') }}" class="btn btn-outline-primary">Register</a>
+                    <a href="{{url('tamu') }}" class="btn btn-outline-primary">Sebagai Tamu</a>
                 </div>
     
                 </div>

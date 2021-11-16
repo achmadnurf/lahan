@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\LahanController;
 use App\Http\Controllers\TanamanController;
-use App\Http\Controllers\BendaharaController;
+use App\Http\Controllers\PosisiLahanController;
+use App\Http\Controllers\TamuController;
 use App\Http\Controllers\PosisiController;
 use App\Http\Controllers\LaporanKontroller;
 use Illuminate\Support\Facades\Route;
@@ -30,7 +31,7 @@ Auth::routes([
 Route::get('/map', MapLocation::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class,
-    'index'])->name('home');
+'index'])->name('home');
 Route::middleware(['auth'])->group(function () {
     Route::resources([
         'posisi' => PosisiController::class,
@@ -41,14 +42,13 @@ Route::middleware(['auth'])->group(function () {
             'lahan' => 'lahan'
         ]
     ]);
-    Route::get('posisi-validasi', [BendaharaController::class, 'index'])->name('validasi.index');
-    Route::get('posisi-authorisasi', [BendaharaController::class, 'authorisasiIndex'])->name('authorisasi.index');
-    Route::get('posisi-authorisasi/{posisi}', [BendaharaController::class, 'authorizePosisi'])->name('authorisasi.authorize');
-    Route::get('posisi-validasi/{posisi}', [BendaharaController::class, 'validasi'])->name('validasi');
-    Route::put('posisi-validasi/{posisi}', [BendaharaController::class, 'store'])->name('validate');
+    Route::get('posisi-validasi', [PosisiLahanController::class, 'index'])->name('validasi.index');
+    Route::get('posisi-authorisasi', [PosisiLahanController::class, 'authorisasiIndex'])->name('authorisasi.index');
+    Route::get('posisi-authorisasi/{posisi}', [PosisiLahanController::class, 'authorizePosisi'])->name('authorisasi.authorize');
+    Route::get('posisi-validasi/{posisi}', [PosisiLahanController::class, 'validasi'])->name('validasi');
+    Route::put('posisi-validasi/{posisi}', [PosisiLahanController::class, 'store'])->name('validate');
     Route::get('laporan/posisi', [LaporanKontroller::class, 'posisi'])->name('laporan.posisi');
-    Route::get('laporan/jurnal/bendahara', [LaporanKontroller::class, 'jurnalBendahara'])->name('laporan.jurnal-bendahara');
-    Route::get('slip/pencairan', [BendaharaController::class, 'slipPencairanIndex'])->name('slip.index');
-    Route::get('slip/{posisi}', [BendaharaController::class, 'cetakSlip'])->name('slip.cetak');
+    Route::get('slip/pencairan', [PosisiLahanController::class, 'slipPencairanIndex'])->name('slip.index');
+    Route::get('slip/{posisi}', [PosisiLahanController::class, 'cetakSlip'])->name('slip.cetak');
 
 });

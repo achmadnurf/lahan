@@ -30,7 +30,7 @@ class UpdateTanamanRequest extends FormRequest
             'pemilik_tanaman'      => 'required',
             'petani_penggarap'    => 'required',
             'lintang_selatan'  => 'required',
-            'bujur_timur'       => 'required',
+            'bujur_timur'       => 'required'
             // 'keterangan' => 'required',
             // 'jenis_tanah' => 'required',
             // 'tanaman' => 'required',
