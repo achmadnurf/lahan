@@ -21,6 +21,13 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="dokumen" class="col-sm-3 col-form-label">dokumen</label>
+                        <div class="col-sm-9">
+                            <textarea wire:model.lazy="dokumen" class="form-control" id="dokumen"
+                                      placeholder="Dokumen" rows="3000"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
                                     <label for="lintang_selatan" class="col-sm-3 col-form-label">Lintang Selatan</label>
                                     <div class="col-sm-9">
                                     <input wire:model.lazy="lintang_selatan" type="text" class="form-control " id="lintang_selatan"

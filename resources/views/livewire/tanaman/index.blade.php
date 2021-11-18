@@ -25,8 +25,9 @@
                         <table class="table table-striped">
                             <tbody>
                             <tr>
-                            <th>NO</th>
+                                <th>No</th>
                                 <th>Lokasi Lahan</th>
+                                <th>Dokumen</th>
                                 <th>Lintang Selatan</th>
                                 <th>Bujur Timur</td>
                                 <th>Jenis Tanah</th>

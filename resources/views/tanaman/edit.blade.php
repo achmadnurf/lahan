@@ -24,7 +24,15 @@
                                     <div class="col-sm-9">
                                         <input name="lokasi" value="{{$tanaman->lokasi}}" type="text" class="form-control"
                                                id="lokasi"
-                                               placeholder="Lokasi">
+                                               placeholder="Desa, Kecamatan, Kabupaten">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="dokumen" class="col-sm-3 col-form-label">Dokumen</label>
+                                    <div class="col-sm-9">
+                                        <input name="dokumen" value="{{$tanaman->dokumen}}" type="text" class="form-control"
+                                               id="dokumen"
+                                               placeholder="Dokumen">
                                     </div>
                                 </div>
                                 <div class="form-group row">

@@ -16,6 +16,7 @@ class CreateTanamansTable extends Migration
         Schema::create('tanamans', function (Blueprint $table) {
             $table->id();
             $table->string('lokasi');
+            $table->string('dokumen');
             $table->string('jenis_tanah');
             $table->string('jenis_tanaman');
             $table->string('pemilik_tanaman');

@@ -11,6 +11,7 @@ class Tanaman extends Model
     public $table = "tanamans";
     protected $fillable = [
         'lokasi',
+        'dokumen',
         'jenis_tanah',
         'jenis_tanaman',
         'pemilik_tanaman',

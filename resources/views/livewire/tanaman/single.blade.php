@@ -1,6 +1,7 @@
 <tr>
     <td>{{$index}}</td>
     <td>{{$tanaman->lokasi}}</td>
+    <td>{{$tanaman->dokumen}}</td>
     <td>{{$tanaman->lintang_selatan}}<sup>°</td>
     <td>{{$tanaman->bujur_timur}}<sup>°</td>
     <td>{{$tanaman->jenis_tanah}}</td>

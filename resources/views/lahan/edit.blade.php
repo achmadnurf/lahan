@@ -31,7 +31,7 @@
                                     <label for="lokasi" class="col-sm-3 col-form-label">Lokasi Lahan</label>
                                     <div class="col-sm-9">
                                     <input name="lokasi"  value="{{$lahan->lokasi}}" type="text" class="form-control" 
-                                            id="lokasi" placeholder="lokasi">
+                                            id="lokasi" placeholder="Desa, Kecamatan, Kabupaten">
                                     </div>
                                 </div>
                                 <div class="form-group row">

@@ -25,6 +25,7 @@ class UpdateTanamanRequest extends FormRequest
     {
         return [
             'lokasi'      => 'required',
+            'dokumen'       => 'required',
             'jenis_tanah'   => 'required',
             'jenis_tanaman'      => 'required',
             'pemilik_tanaman'      => 'required',

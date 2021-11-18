@@ -8,6 +8,7 @@ use Livewire\Component;
 class Create extends Component
 {
     public $lokasi;
+    public $dokumen;
     public $jenis_tanah;
     public $jenis_tanaman;
     public $pemilik_tanaman;
@@ -31,6 +32,7 @@ class Create extends Component
 
     protected $rules = [
         'lokasi'             => 'required',
+        'dokumen'            => 'required',
         'jenis_tanah'        => 'required',
         'jenis_tanaman'      => 'required',
         'pemilik_tanaman'    => 'required',
