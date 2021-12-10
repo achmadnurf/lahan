@@ -50,7 +50,7 @@
                     <script>
                         document.addEventListener('livewire:load', () => {
                             const defaultLocation = [107.59553394562141, -6.951939580144085]
-                      mapboxgl.accessToken = '{{env("MAPBOX_KEY")}}';
+                      mapboxgl.accessToken = "pk.eyJ1IjoieWFlbGFoYW1tIiwiYSI6ImNrdjU1Y3pwdTEyNWoyb3A2cjN4OThnb3IifQ.HWnu302_FDy6RCACyGFHCw";
                       var map = new mapboxgl.Map({
                         container: 'map',
                         center: defaultLocation,

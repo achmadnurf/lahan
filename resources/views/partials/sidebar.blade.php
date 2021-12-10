@@ -34,10 +34,10 @@
         @elserole('admin')
         <li class="{{ request()->is('lahan*') ? 'active' : '' }}"><a class="nav-link" href="{{route('lahan.index')
     }}"><i class="fas
-    fa-credit-card"></i>
+    fa-archive"></i>
                 <span>Data Lahan</span></a></li>
         <li class="{{ request()->is('posisi*') ? 'active' : '' }}"><a class="nav-link" href="{{route('posisi.index')}}"><i
-                        class="fas fa-credit-card"></i> <span>Data Posisi Lahan</span></a></li>
+                        class="fas fa-map-marker"></i> <span>Letak Koordinat Lahan</span></a></li>
         <li class="{{ request()->is('tanaman*') ? 'active' : '' }}"><a class="nav-link" href="{{route('tanaman.index')}}"><i
                         class="fas fa-credit-card"></i> <span>Jenis Tanaman & Posisi</span></a></li>
         @elserole('guest')

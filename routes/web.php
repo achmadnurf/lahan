@@ -29,9 +29,12 @@ Auth::routes([
 ]);
 
 Route::get('/map', MapLocation::class);
-
+Route::get('/tamu', function() {
+    return view('tamu');
+  })->middleware('guest');
 Route::get('/home', [App\Http\Controllers\HomeController::class,
-'index'])->name('home');
+'index'])->name('home'); 
+
 Route::middleware(['auth'])->group(function () {
     Route::resources([
         'posisi' => PosisiController::class,
