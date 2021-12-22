@@ -30,7 +30,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: url('{{('assets/img/2.jpg')}}');;
+                background-image: url('{{('assets/img/lahan.jpg')}}');;
                 background-size:cover;
                 /* color: #636b6f; */
                 font-family: 'Raleway';
