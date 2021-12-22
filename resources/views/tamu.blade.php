@@ -20,7 +20,7 @@
                                 <th>No. SPPT (NOP)</th>
                                 <th>Keterangan</th>
                             </tr>
-                            @if($list_lahan->isEmpty())
+                            @if($list_tamu->isEmpty())
                                 <tr>
                                     <td colspan="6" class="text-center">Data lahan belum tersedia</td>
                                 </tr>

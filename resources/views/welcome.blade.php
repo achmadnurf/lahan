@@ -30,8 +30,9 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-image: url('{{('assets/img/2.jpg')}}');;
+                background-size:cover;
+                /* color: #636b6f; */
                 font-family: 'Raleway';
                 font-weight: 100;
                 height: 100vh;
@@ -58,6 +59,7 @@
             }
             .title {
                 font-size: 84px;
+                color:#ffffff;
             }
             .links > a {
                 color: #636b6f;
@@ -74,32 +76,37 @@
         </style>
     </head>
     <body>
+        
         <div class="flex-center position-ref full-height">
-
             
+                   
 
            
                 <div class="title m-b-md">
+                
                     Management Lahan
-                    
-                <div class="card">
-                    
-                <div class="card-header">
+                
+                <div class="card-hearder">
+                <a href="{{route('login')}}" class="btn btn-primary">Login</a>
+                <a href="{{url('tamu') }}" class="btn btn-primary">Sebagai Tamu</a>
+                </div>
+                
+                <!-- <div class="card-header"> -->
+                
                 <!-- <h4 class="card-title">Managemen Lahan </h4> -->
-                <div class="ml-auto card-header-action">
-                    <a href="{{route('login')}}" class="btn btn-outline-primary">Login</a>
-                    <a href="{{url('tamu') }}" class="btn btn-outline-primary">Sebagai Tamu</a>
-                </div>
+                <!-- <div class="ml-auto card-header-action">
+                    
+                </div> -->
     
-                </div>
+                <!-- </div> -->
                 </div>
                 </div>
 
-                <div class="links">
-                    <!-- <a href="https://laravel.com/docs">Documentation</a>
+                <!-- <div class="links">
+                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a> -->
                     
-                </div>
+                <!-- </div> --> 
             
         </div>
     </body>
