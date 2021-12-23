@@ -1,9 +1,22 @@
 @extends('layouts.auth')
 @section('content')
-    <div class="card">
-        <div class="card-header">{{ __('Login') }}</div>
+    <div class="card text-wihte">
+        <style>
+                  html, body {
+                background-image: url('{{('assets/img/lahan.jpg')}}');;
+                background-size:cover;
+                /* color: #636b6f; */
+                font-family: 'Raleway';
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+            </style>
+        <div class="card-header bg-primary text-white">
+            Login Manajemen Lahan</div>
 
         <div class="card-body">
+           
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 

@@ -27,9 +27,9 @@
             </div>
             @endif
             @yield('content')
-            <div class="simple-footer">
+            <!-- <div class="simple-footer">
               Copyright &copy; {{ config('app.name') }} {{ date('Y') }}
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
